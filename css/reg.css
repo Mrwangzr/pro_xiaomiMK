@@ -26,13 +26,6 @@ img {
   border: 0;
   display: block; }
 
-html, body {
-  height: 100%; }
-
-body {
-  display: flex;
-  flex-direction: column; }
-
 /*
 @media all and (max-width:320px){
     html{font-size:12px;}
