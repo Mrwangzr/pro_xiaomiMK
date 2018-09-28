@@ -66,21 +66,21 @@ body {
     display: block;
     margin: 0 auto; }
 
-#cont {
+.cont {
   margin: 59px auto 0;
   width: 415px;
   height: 320px; }
-  #cont h2 {
+  .cont h2 {
     text-align: center;
     font-size: 38px;
     font-weight: 400;
     margin-bottom: 39px; }
-  #cont p {
+  .cont p {
     height: 38px;
     line-height: 38px;
     font-size: 18px;
     color: #333333; }
-  #cont b {
+  .cont b {
     font-size: 18px;
     color: #333333; }
 
@@ -235,6 +235,15 @@ body {
   top: 50px;
   display: none;
   background: #ffffff; }
+  .select ul {
+    position: absolute;
+    z-index: 5; }
+  .select .mark_select {
+    z-index: 6;
+    display: none;
+    background: #ffffff;
+    height: 334px;
+    width: 393px; }
   .select input {
     width: 353px;
     height: 41px;
@@ -273,3 +282,5 @@ body {
 
 body {
   overflow: hidden; }
+
+/*# sourceMappingURL=reg.css.map */

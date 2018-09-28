@@ -20,7 +20,7 @@ body {
   }
 }
 
-#cont {
+.cont {
   margin: 59px auto 0;
   width: 415px;
   height: 320px;
@@ -223,6 +223,18 @@ body {
   display: none;
   background: #ffffff;
 
+ul{
+  position: absolute;
+  z-index: 5;
+}
+
+  .mark_select{
+    z-index: 6;
+    display: none;
+    background: #ffffff;
+    height: 334px;
+    width: 393px;
+  }
 
   input{
     width: 353px;
@@ -270,9 +282,6 @@ body {
 
     }
   }
-  
-  
-
 }
 
 body{overflow: hidden;}
