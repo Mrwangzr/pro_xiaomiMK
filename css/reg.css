@@ -149,14 +149,16 @@ body {
   color: #ffffff;
   margin: 0 auto; }
 
-#tishi {
-  height: 36px;
-  line-height: 36px;
-  width: 100%;
+.tishi {
+  height: 23px;
+  line-height: 23px;
+  width: 390px;
+  display: none;
   background: url("../img/reg/tanhao.png") no-repeat left center;
   padding-left: 23px;
-  display: none;
-  margin-top: 10px; }
+  font-size: 18px;
+  color: #ff6700;
+  margin: 10px auto; }
 
 #contBottom {
   height: 230px;
