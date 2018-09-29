@@ -126,6 +126,15 @@ html{
       height: 549px;
       position: absolute;
       background: #ffffff; }
+    .backImg .login-page .login-form1 .tishi {
+      height: 23px;
+      line-height: 23px;
+      width: 100%;
+      background: url("../img/reg/tanhao.png") no-repeat left center;
+      padding-left: 23px;
+      font-size: 18px;
+      color: #ff6700;
+      display: none; }
     .backImg .login-page .login-form1 input {
       width: 420px;
       height: 60px;
@@ -144,11 +153,12 @@ html{
         .backImg .login-page .login-form1 p span a {
           color: #999999; }
     .backImg .login-page .login-form1 fieldset {
+      position: absolute;
       height: 70px;
       width: 100%;
       border: none;
       border-top: 1px solid #999999;
-      margin-top: 162px; }
+      bottom: 20px; }
       .backImg .login-page .login-form1 fieldset legend {
         font-size: 18px;
         color: #999999; }

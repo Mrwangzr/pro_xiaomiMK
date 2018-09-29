@@ -67,6 +67,17 @@
       background: #ffffff;
     }
     .login-form1 {
+      .tishi {
+        height:23px;
+        line-height: 23px;
+        width: 100%;
+        background: url("../img/reg/tanhao.png") no-repeat left center;
+        padding-left: 23px;
+        font-size: 18px;
+        color: #ff6700;
+        display: none;
+      }
+
 
       input {
         width: 420px;
@@ -92,11 +103,12 @@
         }
       }
       fieldset {
+        position: absolute;
         height: 70px;
         width: 100%;
         border: none;
         border-top: 1px solid #999999;
-        margin-top: 162px;
+        bottom: 20px;
 
         legend {
           font-size: 18px;
