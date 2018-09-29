@@ -72,7 +72,7 @@ require(["jquery", "search", "cookie"], function ($, search, cookie) {
 
 //输入框1的失去焦点事件
         $(".select1 em input").focusout(function () {
-            $(this).keypress(null);
+            $(this).keyup(null);
         })
         //菜单2
 
