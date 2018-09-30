@@ -1,15 +1,15 @@
 @charset "utf-8";
 @import "common";
+@import "index-mixin";
 
 body {
   overflow-x: hidden;
 }
 
-.wrap-nav, .wrap-img, .wrap-search, .wrap-banner, .wrap-recommend,.wrap-shangouTag {
+.wrap-nav, .wrap-img, .wrap-search, .wrap-banner, .wrap-recommend, .wrap-shangouTag, .allGoodDiv {
   width: 1533px;
   margin: 0 auto;
 }
-
 
 .all {
   width: 3000px;
@@ -257,15 +257,15 @@ body {
 
         a {
           color: #cfcdcb;
-          &:hover{
+          &:hover {
             color: #ffffff;
           }
-            i {
-              font-size: 40px;
-            }
-            p {
-              margin-top: 5px;
-            }
+          i {
+            font-size: 40px;
+          }
+          p {
+            margin-top: 5px;
+          }
         }
       }
       .colLine {
@@ -280,7 +280,7 @@ body {
       }
 
     }
-    .recommendImg{
+    .recommendImg {
       display: block;
       float: left;
       width: 395px;
@@ -288,32 +288,33 @@ body {
       margin-left: 21px;
       overflow: hidden;
       transition: 0.5s;
-      &:hover{
-        box-shadow: 0 5px 10px 10px  #999999;
+      &:hover {
+        box-shadow: 0 5px 10px 10px #999999;
       }
-      img{
+      img {
         width: 395px;
         height: 213px;
       }
     }
   }
-//小米闪购
-  .wrap-shangouTag{
+  //小米闪购
+  .wrap-shangouTag {
+    position: relative;
     height: 732px;
-    h2{
-    font-size: 28px;
-    line-height: 28px;
-    height: 28px;
+    h2 {
+      font-size: 28px;
+      line-height: 28px;
+      height: 28px;
       float: left;
-    color: #666666;
-  }
-    .sgTop{
+      color: #666666;
+    }
+    .sgTop {
       margin-bottom: 23px;
     }
-    .sgBtn{
+    .sgBtn {
       float: right;
 
-      input{
+      input {
         display: block;
         float: left;
         background: #ffffff;
@@ -324,40 +325,40 @@ body {
       }
     }
     //倒计时的样式
-    .daojishi{
+    .daojishi {
       width: 293px;
       height: 426px;
       float: left;
       margin-right: 17px;
       background: #f1eded;
       border-top: 1px solid #e53934;
-      h3{
+      h3 {
         margin: 73px auto 38px;
         text-align: center;
         color: #e53934;
         font-size: 26px;
       }
-      i{
+      i {
         display: block;
         font-size: 60px;
         color: #e53934;
         text-align: center;
         margin-bottom: 43px;
       }
-      b{
+      b {
         display: block;
         color: #999999;
         text-align: center;
         font-size: 18px;
         margin-bottom: 40px;
       }
-      p{
+      p {
         text-align: center;
         height: 58px;
         line-height: 58px;
         color: #605751;
         font-size: 24px;
-        span{
+        span {
           color: #ffffff;
           display: inline-block;
           width: 58px;
@@ -368,66 +369,238 @@ body {
     }
 
     //倒计时后面的列表
-    .sgGoodDiv{
+    .sgGoodDiv {
       width: 1223px;
       height: 426px;
       float: left;
       overflow: hidden;
       position: relative;
 
-        .sgGoodlong{
-          width:3000px;
-          height: 429px;
-          position: absolute;
-        }
-      .sgGood{
+      .sgGoodlong {
+        width: 3000px;
+        height: 429px;
+        position: absolute;
+      }
+      .sgGood {
         width: 293px;
         height: 426px;
         float: left;
         margin-right: 17px;
         background: #fafafa;
-        .goodImg{
+        .goodImg {
           width: 292px;
           height: 287px;
           background: url("../img/index/mobanimg.jpg") no-repeat center center;
           background-size: 70% 70%;
         }
-        h3{
-          text-align: center;
-          font-size: 20px;
-          line-height: 20px;
-          height: 20px;
-          margin-bottom: 10px;
-          color: #000;
-        }
-        b{
-          display: block;
-          text-align: center;
-          font-size: 16px;
-          color: #999999;
-          margin-bottom: 25px;
-        }
-        p{
-          text-align: center;
-          color: #f15b00;
-          font-size: 18px;
-          span{
-            color: #999999;
-            text-decoration: line-through;
-          }
-        }
+        @include goodPriceInfo;
       }
     }
   }
+  //倒计时下面的广告
+  .advImg {
+    width: 1533px;
+    height: 150px;
+    position: absolute;
+    bottom: 53px;
+  }
+  //所有的生成商品列表
+  .allGood {
+    width: 100%;
+    _height: 6267px;
+    min-height: 6267px;
+    background: #f5f5f5;
+    //公共样式
+    .allGoodDiv {
+      height: 1020px;
+      padding-top: 50px;
+      //top
+      .goodDivTop {
+        margin-bottom: 23px;
+        width: 100%;
+        h2 {
+          font-size: 28px;
+          line-height: 28px;
+          color: #666666;
+          float: left;
+        }
+        a {
+          float: right;
+          font-size: 20px;
+          color: #b0b0b0;
 
+          i {
+            font-size: 25px;
+            color: #b0b0b0;
+          }
+        }
+        ul {
+          float: right;
+          height: 29px;
+          li {
+            height: 29px;
+            line-height: 29px;
+            float: left;
+            a {
+              height: 29px;
+              display: block;
+              padding: 0 20px;
+              color: #333333;
+            }
+          }
+        }
+      }
+      //middle
+      .goodDivMiddle {
+        //左侧大图
+        .goodMiddleLeftImg {
+          float: left;
+          img {
+            height: 770px;
+            width: 293px;
+          }
+        }
+        //div的动画效果
+        .goAnimation {
+          position: relative;
+          transition: 0.5s;
+          top: 0;
+          &:hover {
+            box-shadow: 0 2px 4px 4px #d6d6d6;
+            top: -10px;
+          }
+        }
+        .goodMiddleRight {
+          width: 1240px;
+          height: 770px;
+          float: left;
+          //单个标签的样式
+          li {
+            margin: 0 0 17px 16px;
+            height: 376px;;
+            float: left;
+            .goodDiv-one {
+              display: block;
+              float: left;
+              width: 294px;
+              height: 376px;
+              background: #ffffff;
 
+              .goodOneImg {
+                width: 294px;
+                height: 252px;
+                background: url("../img/index/666666.png") no-repeat center center;
+                background-size: 70% 70%;
+              }
+            }
 
+          }
+          //最后一个标签
+          .goodDiv-last {
+            width: 294px;
+            height: 376px;
+            float: left;
 
+            b{
+              height: 136px;
+              width: 234px;
+              display: block;
+              margin-bottom: 24px;
+              background: #ffffff;
+              padding: 40px 30px 0 30px;
+              img{
+                height: 100px;
+                width: 79px;
+                float: right;
+                display: block;
+              }
+              p{
+                display: block;
+                width: 103px;
+                float: left;
+                padding-top: 15px;
+                span{
+                  display: block;
+                  font-size: 18px;
+                  color: #333333;
+                  width: 103px;
+                  line-height: 18px;
+                  margin-bottom: 18px;
+                }
+                strong{
+                  font-size: 14px;
+                  color: #f15b00;
+                }
+              }
+            }
+            em{
+              height: 126px;
+              width: 234px;
+              display: block;
+              background: #ffffff;
+              padding: 50px 30px 0 30px;
+              img{
+                height: 70px;
+                width: 70px;
+                float: right;
+                display: block;
+              }
+              p{
+                display: block;
+                width: 103px;
+                float: left;
+                padding-top: 15px;
+                span{
+                  display: block;
+                  font-size: 20px;
+                  color: #333333;
+                  width: 103px;
+                  line-height: 18px;
+                  margin-bottom:3px;
+                }
+                strong{
+                  font-size: 14px;
+                  color: #999999;
+                }
+              }
+            }
+          }
+        }
+      }
+      //bottom
+      .goodDivBottom {
+        margin-top: 53px;
+        img {
+          width: 1533px;
+          height: 150px;
 
+        }
+      }
+    }
+    //手机商品列的特殊样式
+    .good-phone {
 
+      //middle
+      .goodDivMiddle {
+        .goodDiv-one {
+          @include goodPriceInfo;
+        }
+      }
+    }
+    //家居商品列的特殊样式
+    .good-furniture {
 
+      //middle
+      .goodDivMiddle {
+        .goodDiv-one {
+          @include goodPriceInfo;
+        }
+      }
+    }
+    //下一个位置
+  }
 }
 
-#sgBtn-left{
+#sgBtn-left {
   border-right: none;
 }
