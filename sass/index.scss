@@ -1,17 +1,19 @@
 @charset "utf-8";
 @import "common";
 
-body{
+body {
   overflow-x: hidden;
 }
-.wrap-nav,.wrap-img{
+
+.wrap-nav, .wrap-img, .wrap-search, .wrap-banner, .wrap-recommend,.wrap-shangouTag {
   width: 1533px;
-  margin:0 auto;
+  margin: 0 auto;
 }
+
 
 .all {
   width: 3000px;
-  margin-top: -20px;
+  margin-top: -106px;
   position: absolute;
   left: 33%;
   transform: scale(0.82) translateX(-50%);
@@ -30,13 +32,13 @@ body{
     }
   }
 
-  .nav{
+  .nav {
     height: 50px;
     background: #333333;
-    .nav_left{
+    .nav_left {
       float: left;
     }
-    li{
+    li {
       margin-right: 8px;
       float: left;
       height: 50px;
@@ -46,40 +48,386 @@ body{
         height: 10px;
         color: #555555;
       }
-      a{
+      a {
         float: left;
-        font-size:14px;
+        font-size: 14px;
         line-height: 50px;
         color: #999999;
-        &:hover{
+        &:hover {
           color: #ffffff;
         }
       }
     }
 
-    .nav_right{
+    .nav_right {
       float: right;
     }
   }
 
-  #cart{
+  #cart {
     display: block;
     line-height: 50px;
-    font-size:14px;
+    font-size: 14px;
     height: 50px;
     width: 80px;
     background: #424242 url("../img/index/gouwuche.png") no-repeat 15px center;
-    background-size:25px 27px;
+    background-size: 25px 27px;
     padding-left: 50px;
     float: right;
     color: #999999;
     margin-left: 30px;
 
-    &:hover{
+    &:hover {
       background: #ffffff url("../img/index/gouwuche-ho.png") no-repeat 15px center;
-      background-size:25px 27px;
+      background-size: 25px 27px;
       color: #f15b00;
     }
   }
 
+  .wrap-search {
+    .search-logo {
+      height: 98px;
+      width: 100px;
+      padding-top: 27px;
+      float: left;
+
+      a {
+        width: 69px;
+        height: 67px;
+        display: block;
+        overflow: hidden;
+        text-indent: -1000px;
+      }
+    }
+    .tehui {
+      display: block;
+      text-indent: -1000px;
+      overflow: hidden;
+      float: left;
+      width: 194px;
+      padding-top: 20px;
+    }
+    .search-nav {
+      float: left;
+      li {
+        height: 98px;
+        line-height: 98px;
+        float: left;
+        a {
+          color: #333333;
+          padding: 13px;
+          font-size: 20px;
+          float: left;
+          &:hover {
+            color: #f15b00;
+          }
+        }
+      }
+    }
+    .search-right {
+      float: right;
+      padding-top: 30px;
+      input {
+        width: 284px;
+        padding-left: 20px;
+        height: 60px;
+        border: 1px solid #999999;
+        border-right: none;
+        outline: none;
+        font-size: 25px;
+        float: left;
+      }
+      a {
+        float: left;
+        display: block;
+        height: 60px;
+        width: 60px;
+        color: #333333;
+        border: 1px solid #999999;
+        line-height: 60px;
+        text-align: center;
+        transition: 0.5s;
+
+        &:hover {
+          background: #f15b00;
+          color: #ffffff;
+        }
+        i {
+          font-size: 30px;
+        }
+      }
+    }
+  }
+  //banner图部分
+  .wrap-banner {
+    height: 576px;
+    position: relative;
+
+    .banner-left {
+      padding: 30px 0;
+      width: 283px;
+      position: absolute;
+      height: 516px;
+      z-index: 100;
+      background: #333333;
+      opacity: 0.9;
+
+      li {
+        height: 53px;
+        width: 283px;
+
+        a {
+          display: block;
+          width: 209px;
+          height: 53px;
+          line-height: 53px;
+          color: #ffffff;
+          padding: 0 37px;
+          font-size: 18px;
+          overflow: hidden;
+          &:hover {
+            background: #f15b00;
+          }
+          span {
+            float: right;
+          }
+        }
+      }
+    }
+    //轮播图部分
+    .banner-right {
+      width: 1533px;
+      height: 100%;
+      background: #f15b00;
+      position: absolute;
+      z-index: 5;
+    }
+    //这里是图片样式
+    .banner-right-img {
+    }
+  ;
+
+    //这是小点点的样式
+    .banner-right-dot {
+      position: absolute;
+      right: 30px;
+      bottom: 33px;
+      width: 126px;
+      .banner-dot {
+        width: 6px;
+        height: 6px;
+        border: 3px solid;
+        border-radius: 6px;
+        float: left;
+        margin-right: 13px;
+
+      }
+      .banner-dot1 {
+        border-color: #797775;
+        background: #c9c6c4;
+      }
+
+      .banner-dot2 {
+        border-color: #9c9894;
+        background: #63605c;
+      }
+    }
+  }
+  //推广部分
+  .wrap-recommend {
+    height: 267px;
+    padding-top: 17px;
+
+    .recommend-left {
+      width: 271px;
+      height: 201px;
+      padding: 12px 0 0 12px;
+      background: #5f5750;
+      float: left;
+      li {
+        margin-right: 8px;
+        margin-bottom: 8px;
+        float: left;
+      }
+      .recommend-tag {
+        width: 76px;
+        height: 77px;
+        text-align: center;
+        padding-top: 10px;
+
+        a {
+          color: #cfcdcb;
+          &:hover{
+            color: #ffffff;
+          }
+            i {
+              font-size: 40px;
+            }
+            p {
+              margin-top: 5px;
+            }
+        }
+      }
+      .colLine {
+        width: 1px;
+        height: 87px;
+        background: #665e57;
+      }
+      .rowLine {
+        height: 1px;
+        width: 82px;
+        background: #665e57;
+      }
+
+    }
+    .recommendImg{
+      display: block;
+      float: left;
+      width: 395px;
+      height: 213px;
+      margin-left: 21px;
+      overflow: hidden;
+      transition: 0.5s;
+      &:hover{
+        box-shadow: 0 5px 10px 10px  #999999;
+      }
+      img{
+        width: 395px;
+        height: 213px;
+      }
+    }
+  }
+//小米闪购
+  .wrap-shangouTag{
+    height: 732px;
+    h2{
+    font-size: 28px;
+    line-height: 28px;
+    height: 28px;
+      float: left;
+    color: #666666;
+  }
+    .sgTop{
+      margin-bottom: 23px;
+    }
+    .sgBtn{
+      float: right;
+
+      input{
+        display: block;
+        float: left;
+        background: #ffffff;
+        width: 43px;
+        height: 30px;
+        border: 1px solid #999999;
+        outline: none;
+      }
+    }
+    //倒计时的样式
+    .daojishi{
+      width: 293px;
+      height: 426px;
+      float: left;
+      margin-right: 17px;
+      background: #f1eded;
+      border-top: 1px solid #e53934;
+      h3{
+        margin: 73px auto 38px;
+        text-align: center;
+        color: #e53934;
+        font-size: 26px;
+      }
+      i{
+        display: block;
+        font-size: 60px;
+        color: #e53934;
+        text-align: center;
+        margin-bottom: 43px;
+      }
+      b{
+        display: block;
+        color: #999999;
+        text-align: center;
+        font-size: 18px;
+        margin-bottom: 40px;
+      }
+      p{
+        text-align: center;
+        height: 58px;
+        line-height: 58px;
+        color: #605751;
+        font-size: 24px;
+        span{
+          color: #ffffff;
+          display: inline-block;
+          width: 58px;
+          height: 58px;
+          background: #605751;
+        }
+      }
+    }
+
+    //倒计时后面的列表
+    .sgGoodDiv{
+      width: 1223px;
+      height: 426px;
+      float: left;
+      overflow: hidden;
+      position: relative;
+
+        .sgGoodlong{
+          width:3000px;
+          height: 429px;
+          position: absolute;
+        }
+      .sgGood{
+        width: 293px;
+        height: 426px;
+        float: left;
+        margin-right: 17px;
+        background: #fafafa;
+        .goodImg{
+          width: 292px;
+          height: 287px;
+          background: url("../img/index/mobanimg.jpg") no-repeat center center;
+          background-size: 70% 70%;
+        }
+        h3{
+          text-align: center;
+          font-size: 20px;
+          line-height: 20px;
+          height: 20px;
+          margin-bottom: 10px;
+          color: #000;
+        }
+        b{
+          display: block;
+          text-align: center;
+          font-size: 16px;
+          color: #999999;
+          margin-bottom: 25px;
+        }
+        p{
+          text-align: center;
+          color: #f15b00;
+          font-size: 18px;
+          span{
+            color: #999999;
+            text-decoration: line-through;
+          }
+        }
+      }
+    }
+  }
+
+
+
+
+
+
+
+}
+
+#sgBtn-left{
+  border-right: none;
 }

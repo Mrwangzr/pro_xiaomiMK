@@ -86,13 +86,13 @@ html{
 body {
   overflow-x: hidden; }
 
-.wrap-nav, .wrap-img {
+.wrap-nav, .wrap-img, .wrap-search, .wrap-banner, .wrap-recommend, .wrap-shangouTag {
   width: 1533px;
   margin: 0 auto; }
 
 .all {
   width: 3000px;
-  margin-top: -20px;
+  margin-top: -106px;
   position: absolute;
   left: 33%;
   transform: scale(0.82) translateX(-50%); }
@@ -142,5 +142,261 @@ body {
       background: #ffffff url("../img/index/gouwuche-ho.png") no-repeat 15px center;
       background-size: 25px 27px;
       color: #f15b00; }
+  .all .wrap-search .search-logo {
+    height: 98px;
+    width: 100px;
+    padding-top: 27px;
+    float: left; }
+    .all .wrap-search .search-logo a {
+      width: 69px;
+      height: 67px;
+      display: block;
+      overflow: hidden;
+      text-indent: -1000px; }
+  .all .wrap-search .tehui {
+    display: block;
+    text-indent: -1000px;
+    overflow: hidden;
+    float: left;
+    width: 194px;
+    padding-top: 20px; }
+  .all .wrap-search .search-nav {
+    float: left; }
+    .all .wrap-search .search-nav li {
+      height: 98px;
+      line-height: 98px;
+      float: left; }
+      .all .wrap-search .search-nav li a {
+        color: #333333;
+        padding: 13px;
+        font-size: 20px;
+        float: left; }
+        .all .wrap-search .search-nav li a:hover {
+          color: #f15b00; }
+  .all .wrap-search .search-right {
+    float: right;
+    padding-top: 30px; }
+    .all .wrap-search .search-right input {
+      width: 284px;
+      padding-left: 20px;
+      height: 60px;
+      border: 1px solid #999999;
+      border-right: none;
+      outline: none;
+      font-size: 25px;
+      float: left; }
+    .all .wrap-search .search-right a {
+      float: left;
+      display: block;
+      height: 60px;
+      width: 60px;
+      color: #333333;
+      border: 1px solid #999999;
+      line-height: 60px;
+      text-align: center;
+      transition: 0.5s; }
+      .all .wrap-search .search-right a:hover {
+        background: #f15b00;
+        color: #ffffff; }
+      .all .wrap-search .search-right a i {
+        font-size: 30px; }
+  .all .wrap-banner {
+    height: 576px;
+    position: relative; }
+    .all .wrap-banner .banner-left {
+      padding: 30px 0;
+      width: 283px;
+      position: absolute;
+      height: 516px;
+      z-index: 100;
+      background: #333333;
+      opacity: 0.9; }
+      .all .wrap-banner .banner-left li {
+        height: 53px;
+        width: 283px; }
+        .all .wrap-banner .banner-left li a {
+          display: block;
+          width: 209px;
+          height: 53px;
+          line-height: 53px;
+          color: #ffffff;
+          padding: 0 37px;
+          font-size: 18px;
+          overflow: hidden; }
+          .all .wrap-banner .banner-left li a:hover {
+            background: #f15b00; }
+          .all .wrap-banner .banner-left li a span {
+            float: right; }
+    .all .wrap-banner .banner-right {
+      width: 1533px;
+      height: 100%;
+      background: #f15b00;
+      position: absolute;
+      z-index: 5; }
+    .all .wrap-banner .banner-right-dot {
+      position: absolute;
+      right: 30px;
+      bottom: 33px;
+      width: 126px; }
+      .all .wrap-banner .banner-right-dot .banner-dot {
+        width: 6px;
+        height: 6px;
+        border: 3px solid;
+        border-radius: 6px;
+        float: left;
+        margin-right: 13px; }
+      .all .wrap-banner .banner-right-dot .banner-dot1 {
+        border-color: #797775;
+        background: #c9c6c4; }
+      .all .wrap-banner .banner-right-dot .banner-dot2 {
+        border-color: #9c9894;
+        background: #63605c; }
+  .all .wrap-recommend {
+    height: 267px;
+    padding-top: 17px; }
+    .all .wrap-recommend .recommend-left {
+      width: 271px;
+      height: 201px;
+      padding: 12px 0 0 12px;
+      background: #5f5750;
+      float: left; }
+      .all .wrap-recommend .recommend-left li {
+        margin-right: 8px;
+        margin-bottom: 8px;
+        float: left; }
+      .all .wrap-recommend .recommend-left .recommend-tag {
+        width: 76px;
+        height: 77px;
+        text-align: center;
+        padding-top: 10px; }
+        .all .wrap-recommend .recommend-left .recommend-tag a {
+          color: #cfcdcb; }
+          .all .wrap-recommend .recommend-left .recommend-tag a:hover {
+            color: #ffffff; }
+          .all .wrap-recommend .recommend-left .recommend-tag a i {
+            font-size: 40px; }
+          .all .wrap-recommend .recommend-left .recommend-tag a p {
+            margin-top: 5px; }
+      .all .wrap-recommend .recommend-left .colLine {
+        width: 1px;
+        height: 87px;
+        background: #665e57; }
+      .all .wrap-recommend .recommend-left .rowLine {
+        height: 1px;
+        width: 82px;
+        background: #665e57; }
+    .all .wrap-recommend .recommendImg {
+      display: block;
+      float: left;
+      width: 395px;
+      height: 213px;
+      margin-left: 21px;
+      overflow: hidden;
+      transition: 0.5s; }
+      .all .wrap-recommend .recommendImg:hover {
+        box-shadow: 0 5px 10px 10px  #999999; }
+      .all .wrap-recommend .recommendImg img {
+        width: 395px;
+        height: 213px; }
+  .all .wrap-shangouTag {
+    height: 732px; }
+    .all .wrap-shangouTag h2 {
+      font-size: 28px;
+      line-height: 28px;
+      height: 28px;
+      float: left;
+      color: #666666; }
+    .all .wrap-shangouTag .sgTop {
+      margin-bottom: 23px; }
+    .all .wrap-shangouTag .sgBtn {
+      float: right; }
+      .all .wrap-shangouTag .sgBtn input {
+        display: block;
+        float: left;
+        background: #ffffff;
+        width: 43px;
+        height: 30px;
+        border: 1px solid #999999;
+        outline: none; }
+    .all .wrap-shangouTag .daojishi {
+      width: 293px;
+      height: 426px;
+      float: left;
+      margin-right: 17px;
+      background: #f1eded;
+      border-top: 1px solid #e53934; }
+      .all .wrap-shangouTag .daojishi h3 {
+        margin: 73px auto 38px;
+        text-align: center;
+        color: #e53934;
+        font-size: 26px; }
+      .all .wrap-shangouTag .daojishi i {
+        display: block;
+        font-size: 60px;
+        color: #e53934;
+        text-align: center;
+        margin-bottom: 43px; }
+      .all .wrap-shangouTag .daojishi b {
+        display: block;
+        color: #999999;
+        text-align: center;
+        font-size: 18px;
+        margin-bottom: 40px; }
+      .all .wrap-shangouTag .daojishi p {
+        text-align: center;
+        height: 58px;
+        line-height: 58px;
+        color: #605751;
+        font-size: 24px; }
+        .all .wrap-shangouTag .daojishi p span {
+          color: #ffffff;
+          display: inline-block;
+          width: 58px;
+          height: 58px;
+          background: #605751; }
+    .all .wrap-shangouTag .sgGoodDiv {
+      width: 1223px;
+      height: 426px;
+      float: left;
+      overflow: hidden;
+      position: relative; }
+      .all .wrap-shangouTag .sgGoodDiv .sgGoodlong {
+        width: 3000px;
+        height: 429px;
+        position: absolute; }
+      .all .wrap-shangouTag .sgGoodDiv .sgGood {
+        width: 293px;
+        height: 426px;
+        float: left;
+        margin-right: 17px;
+        background: #fafafa; }
+        .all .wrap-shangouTag .sgGoodDiv .sgGood .goodImg {
+          width: 292px;
+          height: 287px;
+          background: url("../img/index/mobanimg.jpg") no-repeat center center;
+          background-size: 70% 70%; }
+        .all .wrap-shangouTag .sgGoodDiv .sgGood h3 {
+          text-align: center;
+          font-size: 20px;
+          line-height: 20px;
+          height: 20px;
+          margin-bottom: 10px;
+          color: #000; }
+        .all .wrap-shangouTag .sgGoodDiv .sgGood b {
+          display: block;
+          text-align: center;
+          font-size: 16px;
+          color: #999999;
+          margin-bottom: 25px; }
+        .all .wrap-shangouTag .sgGoodDiv .sgGood p {
+          text-align: center;
+          color: #f15b00;
+          font-size: 18px; }
+          .all .wrap-shangouTag .sgGoodDiv .sgGood p span {
+            color: #999999;
+            text-decoration: line-through; }
+
+#sgBtn-left {
+  border-right: none; }
 
 /*# sourceMappingURL=index.css.map */
