@@ -83,6 +83,37 @@ html{
     color: #999999;
     text-align: center; }
 
+.lastLi-common {
+  margin: 0 !important; }
+
+.lastLi-border {
+  border-right: none !important; }
+
+.bottom {
+  width: 1533px;
+  height: 636px;
+  margin: 0 auto; }
+  .bottom ul {
+    width: 1533px;
+    height: 67px;
+    padding-top: 33px;
+    border-bottom: 1px solid #d7d7d7; }
+    .bottom ul li {
+      float: left;
+      text-align: center;
+      line-height: 33px;
+      height: 33px;
+      width: 305px;
+      border-right: 1px solid #d7d7d7; }
+      .bottom ul li a {
+        color: #666;
+        font-size: 20px;
+        transition: 0.2s; }
+        .bottom ul li a i {
+          font-size: 35px; }
+        .bottom ul li a:hover {
+          color: #ff6700; }
+
 body {
   overflow-x: hidden; }
 
@@ -436,11 +467,17 @@ body {
               display: block;
               padding: 0 20px;
               color: #333333; }
-      .all .allGood .allGoodDiv .goodDivMiddle .goodMiddleLeftImg {
+      .all .allGood .allGoodDiv .goodDivMiddle .goodMiddleLeftImg1 {
         float: left; }
-        .all .allGood .allGoodDiv .goodDivMiddle .goodMiddleLeftImg img {
+        .all .allGood .allGoodDiv .goodDivMiddle .goodMiddleLeftImg1 img {
           height: 770px;
           width: 293px; }
+      .all .allGood .allGoodDiv .goodDivMiddle .goodMiddleLeftImg2 {
+        float: left; }
+        .all .allGood .allGoodDiv .goodDivMiddle .goodMiddleLeftImg2 img {
+          height: 376px;
+          width: 293px;
+          margin-bottom: 18px; }
       .all .allGood .allGoodDiv .goodDivMiddle .goAnimation {
         position: relative;
         transition: 0.5s;
@@ -569,6 +606,189 @@ body {
       .all .allGood .good-furniture .goodDivMiddle .goodDiv-one p span {
         color: #999999;
         text-decoration: line-through; }
+    .all .allGood .good-collocation .goodDivMiddle .goodDiv-one h3 {
+      text-align: center;
+      font-size: 20px;
+      line-height: 20px;
+      height: 20px;
+      margin-bottom: 10px;
+      color: #333333; }
+    .all .allGood .good-collocation .goodDivMiddle .goodDiv-one b {
+      display: block;
+      text-align: center;
+      font-size: 16px;
+      color: #999999;
+      margin-bottom: 25px; }
+    .all .allGood .good-collocation .goodDivMiddle .goodDiv-one p {
+      text-align: center;
+      color: #f15b00;
+      font-size: 18px; }
+      .all .allGood .good-collocation .goodDivMiddle .goodDiv-one p span {
+        color: #999999;
+        text-decoration: line-through; }
+    .all .allGood .good-collocation .goodDivMiddle b {
+      margin: 25px 0 0 0; }
+    .all .allGood .good-collocation .goodDivMiddle .goodDiv-last b {
+      margin: 0 0 25px 0; }
+    .all .allGood .good-Recommend {
+      height: 435px;
+      overflow: hidden; }
+      .all .allGood .good-Recommend ul {
+        position: relative;
+        _width: 1556px;
+        min-width: 1556px;
+        left: -18px; }
+      .all .allGood .good-Recommend .sgBtn {
+        float: right; }
+        .all .allGood .good-Recommend .sgBtn input {
+          display: block;
+          float: left;
+          background: #ffffff;
+          width: 43px;
+          height: 30px;
+          border: 1px solid #999999;
+          outline: none; }
+    .all .allGood .good-hotComment {
+      height: 560px; }
+      .all .allGood .good-hotComment .good-hco {
+        width: 370px;
+        height: 519px;
+        background: #ffffff;
+        float: left;
+        margin-right: 17px; }
+        .all .allGood .good-hotComment .good-hco img {
+          width: 370px;
+          height: 276px; }
+        .all .allGood .good-hotComment .good-hco b {
+          display: block;
+          margin: 34px auto 32px;
+          width: 300px;
+          height: 90px;
+          font-size: 18px;
+          line-height: 30px;
+          color: #333333;
+          overflow: hidden;
+          text-overflow: ellipsis; }
+        .all .allGood .good-hotComment .good-hco strong {
+          display: block;
+          margin-left: 35px;
+          font-size: 14px;
+          color: #b0b0b0;
+          margin-bottom: 20px; }
+        .all .allGood .good-hotComment .good-hco p {
+          display: block;
+          color: #333333;
+          height: 18px;
+          line-height: 18px;
+          font-size: 18px;
+          margin-left: 35px; }
+          .all .allGood .good-hotComment .good-hco p span {
+            padding-left: 5px;
+            display: inline-block;
+            height: 18px;
+            line-height: 18px;
+            border-left: 2px solid #999999;
+            color: #ff6700; }
+    .all .allGood .good-content {
+      height: 580px; }
+      .all .allGood .good-content .good-contentOne {
+        width: 370px;
+        height: 456px;
+        background: #ffffff;
+        float: left;
+        margin-right: 17px;
+        padding-top: 63px;
+        position: relative; }
+        .all .allGood .good-content .good-contentOne h3 {
+          font-size: 18px;
+          line-height: 18px;
+          margin-bottom: 30px;
+          text-align: center;
+          color: #333333; }
+        .all .allGood .good-content .good-contentOne h2 {
+          font-size: 24px;
+          line-height: 24px;
+          margin-bottom: 11px;
+          text-align: center;
+          color: #333333; }
+        .all .allGood .good-content .good-contentOne p {
+          width: 240px;
+          display: block;
+          margin: 0 auto 24px;
+          text-align: center;
+          color: #d7d7d7; }
+        .all .allGood .good-content .good-contentOne b {
+          display: block;
+          text-align: center;
+          margin-bottom: 35px; }
+        .all .allGood .good-content .good-contentOne img {
+          margin: 0 auto; }
+        .all .allGood .good-content .good-contentOne .content-dotList {
+          width: 100%;
+          height: 15px;
+          line-height: 15px;
+          text-align: center;
+          position: absolute;
+          bottom: 30px; }
+          .all .allGood .good-content .good-contentOne .content-dotList li {
+            display: inline-block;
+            width: 38px;
+            text-align: center; }
+          .all .allGood .good-content .good-contentOne .content-dotList .content-dot {
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            border-radius: 4px;
+            background: #d7d7d7; }
+    .all .allGood .good-video {
+      height: 500px; }
+      .all .allGood .good-video .good-videoOne {
+        width: 370px;
+        height: 357px;
+        background: #ffffff;
+        float: left;
+        margin-right: 17px; }
+        .all .allGood .good-video .good-videoOne .good-videoOneImg {
+          width: 370px;
+          height: 226px;
+          position: relative; }
+          .all .allGood .good-video .good-videoOne .good-videoOneImg img {
+            width: 100%;
+            height: 100%; }
+          .all .allGood .good-video .good-videoOne .good-videoOneImg span {
+            display: block;
+            position: absolute;
+            width: 41px;
+            height: 26px;
+            border: 2px solid #ffffff;
+            border-radius: 12px;
+            left: 25px;
+            bottom: 12px;
+            transition: 0.2s; }
+            .all .allGood .good-video .good-videoOne .good-videoOneImg span em {
+              display: block;
+              border-left: 12px solid #ffffff;
+              border-right: none;
+              border-top: 8px solid transparent;
+              border-bottom: 8px solid transparent;
+              position: absolute;
+              left: 40%;
+              top: 20%; }
+          .all .allGood .good-video .good-videoOne .good-videoOneImg:hover span {
+            width: 45px;
+            height: 30px;
+            border: none;
+            background: #f15b00; }
+      .all .allGood .good-video h3 {
+        margin: 40px auto 17px;
+        text-align: center;
+        line-height: 18px;
+        color: #333333; }
+      .all .allGood .good-video p {
+        text-align: center;
+        font-size: 14px;
+        line-height: 14px;
+        color: #d7d7d7; }
 
 #sgBtn-left {
   border-right: none; }

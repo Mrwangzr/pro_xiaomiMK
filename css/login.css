@@ -83,6 +83,37 @@ html{
     color: #999999;
     text-align: center; }
 
+.lastLi-common {
+  margin: 0 !important; }
+
+.lastLi-border {
+  border-right: none !important; }
+
+.bottom {
+  width: 1533px;
+  height: 636px;
+  margin: 0 auto; }
+  .bottom ul {
+    width: 1533px;
+    height: 67px;
+    padding-top: 33px;
+    border-bottom: 1px solid #d7d7d7; }
+    .bottom ul li {
+      float: left;
+      text-align: center;
+      line-height: 33px;
+      height: 33px;
+      width: 305px;
+      border-right: 1px solid #d7d7d7; }
+      .bottom ul li a {
+        color: #666;
+        font-size: 20px;
+        transition: 0.2s; }
+        .bottom ul li a i {
+          font-size: 35px; }
+        .bottom ul li a:hover {
+          color: #ff6700; }
+
 .wrap {
   transform: scale(0.8);
   margin-top: -50px; }
