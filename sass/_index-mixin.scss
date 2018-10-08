@@ -24,3 +24,32 @@
     }
   }
 }
+
+.bannerTwoLevelMenu{
+  width: 1280px;
+  height: 575px;
+  position: absolute;
+  z-index: 500;
+  top: 0;
+  left: 283px;
+  overflow: hidden;
+
+  ul{
+    min-width: 313px;
+    height: 575px;
+    float: left;
+    margin-left: -1px;
+    background: #ffffff;
+    li{
+      line-height: 98px;
+      padding-left:30px ;
+      width: 283px!important;
+      height: 98px!important;
+        color: #333333;
+      transition: 0.3s;
+        &:hover{
+          color: #ff6700;
+        }
+    }
+  }
+}

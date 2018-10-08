@@ -171,9 +171,8 @@ body {
       width: 283px;
       position: absolute;
       height: 516px;
-      z-index: 99;
+      z-index: 400;
       background: #333333;
-      opacity: 0.9;
 
       li {
         height: 53px;
@@ -188,9 +187,9 @@ body {
           padding: 0 37px;
           font-size: 18px;
           overflow: hidden;
-          &:hover {
+       /*   &:hover {
             background: #f15b00;
-          }
+          }*/
           span {
             float: right;
           }
@@ -203,18 +202,29 @@ body {
       height: 100%;
       background: #f15b00;
       position: absolute;
-      z-index: 5;
+      z-index: 10;
     }
     //这里是图片样式
     .banner-right-img {
+      img{
+        width: 1533px;
+        height: 100%;
+        position: absolute;
+        z-index: 6;
+        transition: 0.3s;
+        opacity: 0;
+      }
+      img:nth-child(0){
+        opacity: 1;
+      }
     }
-  ;
 
     //这是小点点的样式
     .banner-right-dot {
       position: absolute;
       right: 30px;
       bottom: 33px;
+      z-index: 999;
       width: 126px;
       .banner-dot {
         width: 6px;
@@ -223,17 +233,15 @@ body {
         border-radius: 6px;
         float: left;
         margin-right: 13px;
-
+        border-color: #9c9894;
+        background: #63605c;
       }
       .banner-dot1 {
         border-color: #797775;
         background: #c9c6c4;
       }
 
-      .banner-dot2 {
-        border-color: #9c9894;
-        background: #63605c;
-      }
+
     }
   }
   //推广部分
