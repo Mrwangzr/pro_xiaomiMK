@@ -1,0 +1,48 @@
+.top-twoLevelMenu{
+  width: 2000px;
+  height:283px;
+  background: #ffffff;
+  box-shadow: 0 2px 2px 2px #999999;
+  border-top: 1px solid #999999;
+  position: absolute;
+  top: 98px;
+  left: -175px;
+  display: none;
+  z-index: 100;
+  padding-left: 183px;
+  b{
+    display: block;
+    float: left;
+    width: 2px;
+    margin-top: 43px;
+    height: 125px;
+    background: #e0e0e0;
+  }
+  a{
+    float: left;
+    width: 253px;
+    height: 280px;
+      span{
+        display: block;
+        width: 253px;
+        height: 208px;
+        background-image: url("../img/index/heisha-80.png");
+        background-repeat: no-repeat;
+        background-position: center center;
+      }
+    em{
+      font-size: 16px;
+      color: #333333;
+      display: block;
+      text-align: center;
+      line-height: 16px;
+      margin-bottom: 13px;
+    }
+    strong{
+      font-size: 16px;
+      color: #ff6700;
+      display: block;
+      text-align: center;
+    }
+  }
+}

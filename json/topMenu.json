@@ -1,0 +1,228 @@
+{
+  "0": {
+    "xiaomi8qingchunban": {
+      "name": "小米8青春版",
+      "src": "url('../img/index/images/xiaomi8qingchunban.jpg')",
+      "price": "1399元起"
+    },
+    "xiaomi8pingmuzhiwenban": {
+      "name": "小米8屏幕指纹版",
+      "src": "url('../img/index/images/xiaomi8pingmuzhiwenban.jpg')",
+      "price": "3199元起"
+    },
+    "xiaomi8": {
+      "name": "小米8",
+      "src": "url('../img/index/images/xiaomi8.jpg')",
+      "price": "2699元起"
+    },
+    "xiaomi8SE": {
+      "name": "小米8SE",
+      "src": "url('../img/index/images/xiaomi8SE.jpg')",
+      "price": "1799元起"
+    },
+    "xiaomiMAX3": {
+      "name": "小米 MAX3",
+      "src": "url('../img/index/images/xiaomiMAX3.jpg')",
+      "price": "1699元起"
+    },
+    "xiaomiMIX2S": {
+      "name": "小米 MIX2S  ",
+      "src": "url('../img/index/images/xiaomiMIX2S.jpg')",
+      "price": "3299元起"
+    }
+  },
+  "1": {
+    "hongmi6Pro": {
+      "name": "红米6 Pro",
+      "src": "url('../img/index/images/hongmi6Pro.jpg')",
+      "price": "999元起"
+    },
+    "hongmi6": {
+      "name": "红米6",
+      "src": "url('../img/index/images/hongmi6.jpg')",
+      "price": "799元"
+    },
+    "hongmi6A": {
+      "name": "红米6A",
+      "src": "url('../img/index/images/hongmi6A.jpg')",
+      "price": "599元"
+    },
+    "hongmiNote5": {
+      "name": "红米Note 5",
+      "src": "url('../img/index/images/hongmiNote5.jpg')",
+      "price": "1099元起"
+    },
+    "hongmiS2": {
+      "name": "红米S2",
+      "src": "url('../img/index/images/hongmiS2.jpg')",
+      "price": "999元"
+    }
+  },
+  "2": {
+    "xiaomidianshi475yingcun": {
+      "name": "小米电视4 75英寸",
+      "src": "url('../img/index/images/xiaomidianshi475yingcun.jpg')",
+      "price": "8999元"
+    },
+    "xiaomidianshi4A32yingcun": {
+      "name": "小米电视4A 32英寸",
+      "src": "url('../img/index/images/xiaomidianshi4A32yingcun.jpg')",
+      "price": "899元"
+    },
+    "xiaomidianshi4A32cunqingchunban": {
+      "name": "小米电视4A 32寸青春版",
+      "src": "url('../img/index/images/xiaomidianshi4A32yingcunqingchunban.jpg')",
+      "price": "1499元"
+    },
+    "xiaomidianshi4A50yingcun": {
+      "name": "小米电视4A 50英寸",
+      "src": "url('../img/index/images/xiaomidianshi4A50yingcun.jpg')",
+      "price": "2299元起"
+    },
+    "xiaomidianshi4A55yingcun": {
+      "name": "小米电视4A 55英寸",
+      "src": "url('../img/index/images/xiaomidianshi4A55yingcun.jpg')",
+      "price": "2299元"
+    }
+  },
+  "3": {
+    "xiaomi8qingchunban": {
+      "name": "小米8青春版",
+      "src": "url('../img/index/images/xiaomi8qingchunban.jpg')",
+      "price": "1399元起"
+    },
+    "xiaomi8pingmuzhiwenban": {
+      "name": "小米8屏幕指纹版",
+      "src": "url('../img/index/images/xiaomi8pingmuzhiwenban.jpg')",
+      "price": "3199元起"
+    },
+    "xiaomi8": {
+      "name": "小米8",
+      "src": "url('../img/index/images/xiaomi8.jpg')",
+      "price": "2699元起"
+    },
+    "xiaomi8SE": {
+      "name": "小米8SE",
+      "src": "url('../img/index/images/xiaomi8SE.jpg')",
+      "price": "1799元起"
+    },
+    "xiaomiMAX3": {
+      "name": "小米 MAX3",
+      "src": "url('../img/index/images/xiaomiMAX3.jpg')",
+      "price": "1699元起"
+    },
+    "xiaomiMIX2S": {
+      "name": "小米 MIX2S  ",
+      "src": "url('../img/index/images/xiaomiMIX2S.jpg')",
+      "price": "3299元起"
+    }
+  },
+  "4": {
+    "hongmi6Pro": {
+      "name": "红米6 Pro",
+      "src": "url('../img/index/images/hongmi6Pro.jpg')",
+      "price": "999元起"
+    },
+    "hongmi6": {
+      "name": "红米6",
+      "src": "url('../img/index/images/hongmi6.jpg')",
+      "price": "799元"
+    },
+    "hongmi6A": {
+      "name": "红米6A",
+      "src": "url('../img/index/images/hongmi6A.jpg')",
+      "price": "599元"
+    },
+    "hongmiNote5": {
+      "name": "红米Note 5",
+      "src": "url('../img/index/images/hongmiNote5.jpg')",
+      "price": "1099元起"
+    },
+    "hongmiS2": {
+      "name": "红米S2",
+      "src": "url('../img/index/images/hongmiS2.jpg')",
+      "price": "999元"
+    }
+  },
+  "5": {
+    "xiaomidianshi475yingcun": {
+      "name": "小米电视4 75英寸",
+      "src": "url('../img/index/images/xiaomidianshi475yingcun.jpg')",
+      "price": "8999元"
+    },
+    "xiaomidianshi4A32yingcun": {
+      "name": "小米电视4A 32英寸",
+      "src": "url('../img/index/images/xiaomidianshi4A32yingcun.jpg')",
+      "price": "899元"
+    },
+    "xiaomidianshi4A32cunqingchunban": {
+      "name": "小米电视4A 32寸青春版",
+      "src": "url('../img/index/images/xiaomidianshi4A32yingcunqingchunban.jpg')",
+      "price": "1499元"
+    },
+    "xiaomidianshi4A50yingcun": {
+      "name": "小米电视4A 50英寸",
+      "src": "url('../img/index/images/xiaomidianshi4A50yingcun.jpg')",
+      "price": "2299元起"
+    },
+    "xiaomidianshi4A55yingcun": {
+      "name": "小米电视4A 55英寸",
+      "src": "url('../img/index/images/xiaomidianshi4A55yingcun.jpg')",
+      "price": "2299元"
+    }
+  },
+  "6": {
+    "xiaomi8qingchunban": {
+      "name": "小米8青春版",
+      "src": "url('../img/index/images/xiaomi8qingchunban.jpg')",
+      "price": "1399元起"
+    },
+    "xiaomi8pingmuzhiwenban": {
+      "name": "小米8屏幕指纹版",
+      "src": "url('../img/index/images/xiaomi8pingmuzhiwenban.jpg')",
+      "price": "3199元起"
+    },
+    "xiaomi8": {
+      "name": "小米8",
+      "src": "url('../img/index/images/xiaomi8.jpg')",
+      "price": "2699元起"
+    },
+    "xiaomi8SE": {
+      "name": "小米8SE",
+      "src": "url('../img/index/images/xiaomi8SE.jpg')",
+      "price": "1799元起"
+    },
+    "xiaomiMAX3": {
+      "name": "小米 MAX3",
+      "src": "url('../img/index/images/xiaomiMAX3.jpg')",
+      "price": "1699元起"
+    },
+    "xiaomiMIX2S": {
+      "name": "小米 MIX2S  ",
+      "src": "url('../img/index/images/xiaomiMIX2S.jpg')",
+      "price": "3299元起"
+    }
+  },
+  "7": {
+    "xiaomidianshi475yingcun": {
+      "name": "小米电视4 75英寸",
+      "src": "url('../img/index/images/xiaomidianshi475yingcun.jpg')",
+      "price": "8999元"
+    },
+    "xiaomidianshi4A32yingcun": {
+      "name": "小米电视4A 32英寸",
+      "src": "url('../img/index/images/xiaomidianshi4A32yingcun.jpg')",
+      "price": "899元"
+    },
+    "xiaomidianshi4A32cunqingchunban": {
+      "name": "小米电视4A 32寸青春版",
+      "src": "url('../img/index/images/xiaomidianshi4A32yingcunqingchunban.jpg')",
+      "price": "1499元"
+    },
+    "xiaomidianshi4A50yingcun": {
+      "name": "小米电视4A 50英寸",
+      "src": "url('../img/index/images/xiaomidianshi4A50yingcun.jpg')",
+      "price": "2299元起"
+    }
+  }
+}
