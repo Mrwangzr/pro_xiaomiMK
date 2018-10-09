@@ -200,9 +200,32 @@ body {
     .banner-right {
       width: 1533px;
       height: 100%;
-      background: #f15b00;
       position: absolute;
       z-index: 10;
+      ul:first-child{
+        .bannerBtn{
+          width: 50px;
+          height: 70px;
+          opacity: 0.8;
+          position: absolute;
+          z-index: 2000;
+          top: 40%;
+          display: block;
+          font-size: 30px;
+          color: #d7d7d7;
+          text-align: center;
+          line-height: 70px;
+          &:hover{
+            background: #999999;
+          }
+        }
+        .leftBtn{
+          left: 18%;
+        }
+        .rightBtn{
+          right: 0;
+        }
+      }
     }
     //这里是图片样式
     .banner-right-img {
@@ -224,7 +247,7 @@ body {
       position: absolute;
       right: 30px;
       bottom: 33px;
-      z-index: 999;
+      z-index: 2000;
       width: 126px;
       .banner-dot {
         width: 6px;

@@ -26,14 +26,14 @@
 }
 
 .bannerTwoLevelMenu{
-  width: 1280px;
+  width: 0px;
   height: 575px;
   position: absolute;
   z-index: 500;
   top: 0;
   left: 283px;
-  overflow: hidden;
-
+  div{
+    width: 1300px;
   ul{
     min-width: 313px;
     height: 575px;
@@ -51,5 +51,6 @@
           color: #ff6700;
         }
     }
+  }
   }
 }

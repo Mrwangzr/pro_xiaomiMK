@@ -52,15 +52,15 @@ class Slide{
         this.ul = ul;
         this.imgArr = ul.find("img");
         this.length = this.imgArr.length;
-        this.leftBtn = $("<a href='##'></a>");
-        this.rightBtb = $("<a href='##'></a>");
+        this.leftBtn = $(' <a href="##" class="bannerBtn leftBtn">&lt;</a>');
+        this.rightBtn = $('<a href="##" class="bannerBtn rightBtn">&gt;</a>');
         this.zIndex = 10;
         this.now = 0;
         this.dotList = dot.find(".banner-dot");
         this.init();
     }
-    toImg(last){
-        this.now++;
+    toImg(last,now){
+        this.now = now ;
         if(this.now === this.length){
             this.now = 0;
         }
@@ -85,7 +85,7 @@ class Slide{
         this.timer =  setInterval($.proxy(this.setPlayTimer,this),3000);
     }
     setPlayTimer() {
-        this.toImg(this.now);
+        this.toImg(this.now,++this.now);
     }
     init(){
         $(this.imgArr[this.now]).css({
@@ -93,9 +93,26 @@ class Slide{
         });
         this.autoplay();
 
-        this.ul.mouseenter($.proxy(this.ulMouseEnter,this));
-        this.ul.mouseleave($.proxy(this.ulMouseLeave,this));
+        $(this.ul.parent()).mouseenter($.proxy(this.ulMouseEnter,this));
+        $(this.ul.parent()).mouseleave($.proxy(this.ulMouseLeave,this));
 
+            $.each(this.dotList,$.proxy(this.eachDotList,this));
+
+            this.leftBtn.appendTo(this.ul);
+            this.rightBtn.appendTo(this.ul);
+            this.leftBtn.click($.proxy(this.leftBtnClick,this));
+            this.rightBtn.click($.proxy(this.rightBtnClick,this));
+
+    }
+    leftBtnClick(){
+        this.toImg(this.now,--this.now);
+
+    }
+    rightBtnClick(){
+        this.toImg(this.now,++this.now);
+    }
+    eachDotList(i){
+        this.dotList.eq(i).on("mouseover",i,$.proxy(this.dotMouseOver,this));
     }
 
     ulMouseEnter(){
@@ -103,6 +120,9 @@ class Slide{
     }
     ulMouseLeave(){
         this.autoplay();
+    }
+    dotMouseOver(i){
+        this.toImg(this.now,i.data);
     }
 
 

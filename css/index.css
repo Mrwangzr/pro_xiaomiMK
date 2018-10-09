@@ -185,28 +185,29 @@ html{
     color: #d7d7d7; }
 
 .bannerTwoLevelMenu {
-  width: 1280px;
+  width: 0px;
   height: 575px;
   position: absolute;
   z-index: 500;
   top: 0;
-  left: 283px;
-  overflow: hidden; }
-  .bannerTwoLevelMenu ul {
-    min-width: 313px;
-    height: 575px;
-    float: left;
-    margin-left: -1px;
-    background: #ffffff; }
-    .bannerTwoLevelMenu ul li {
-      line-height: 98px;
-      padding-left: 30px;
-      width: 283px !important;
-      height: 98px !important;
-      color: #333333;
-      transition: 0.3s; }
-      .bannerTwoLevelMenu ul li:hover {
-        color: #ff6700; }
+  left: 283px; }
+  .bannerTwoLevelMenu div {
+    width: 1300px; }
+    .bannerTwoLevelMenu div ul {
+      min-width: 313px;
+      height: 575px;
+      float: left;
+      margin-left: -1px;
+      background: #ffffff; }
+      .bannerTwoLevelMenu div ul li {
+        line-height: 98px;
+        padding-left: 30px;
+        width: 283px !important;
+        height: 98px !important;
+        color: #333333;
+        transition: 0.3s; }
+        .bannerTwoLevelMenu div ul li:hover {
+          color: #ff6700; }
 
 .top-twoLevelMenu {
   width: 2000px;
@@ -401,9 +402,26 @@ body {
     .all .wrap-banner .banner-right {
       width: 1533px;
       height: 100%;
-      background: #f15b00;
       position: absolute;
       z-index: 10; }
+      .all .wrap-banner .banner-right ul:first-child .bannerBtn {
+        width: 50px;
+        height: 70px;
+        opacity: 0.8;
+        position: absolute;
+        z-index: 2000;
+        top: 40%;
+        display: block;
+        font-size: 30px;
+        color: #d7d7d7;
+        text-align: center;
+        line-height: 70px; }
+        .all .wrap-banner .banner-right ul:first-child .bannerBtn:hover {
+          background: #999999; }
+      .all .wrap-banner .banner-right ul:first-child .leftBtn {
+        left: 18%; }
+      .all .wrap-banner .banner-right ul:first-child .rightBtn {
+        right: 0; }
     .all .wrap-banner .banner-right-img img {
       width: 1533px;
       height: 100%;
@@ -417,7 +435,7 @@ body {
       position: absolute;
       right: 30px;
       bottom: 33px;
-      z-index: 999;
+      z-index: 2000;
       width: 126px; }
       .all .wrap-banner .banner-right-dot .banner-dot {
         width: 6px;
