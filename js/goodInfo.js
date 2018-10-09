@@ -62,11 +62,17 @@ require(["jquery", "cookie", "cookieConverts", "toptwolevelmenu", "indexModel"],
             $(".bannerTwoLevelMenu").hide(0);
         });
         //----
-        /**
-         *
-        顶部固定定位 网页架构原因最后再做
-        var goodTag = $(".goodTag");
-         */
+//        顶部固定定位 网页架构原因最后再做
+        var goodTag = $(".goodTag1");
+        $(document).scroll(function () {
+            console.log($(this).scrollTop());
+            if($(this).scrollTop()>=177){
+                goodTag.slideDown(500);
+            }
+            else{
+                goodTag.slideUp(500);
+            }
+        });
         //---------
     })
 });

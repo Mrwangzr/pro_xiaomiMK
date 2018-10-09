@@ -16,6 +16,7 @@ body {
   margin: 0 auto;
 }
 
+
 .all {
   width: 2000px;
   height: 2000px;
@@ -33,6 +34,7 @@ body {
 .goodTag {
   height: 78px;
   box-shadow: #d7d7d7 3px 6px 6px;
+  background: #ffffff;
 
   .wrap-goodTag {
     height: 78px;
@@ -298,18 +300,27 @@ body {
         display: block;
         float: left;
         margin-right: 18px;
+        transition: 0.3s;
         width: 375px;
         background: #ff6700;
         @include setTextHeight(68px,68px,18px,#fff);
         text-align: center;
+        &:hover{
+          background: #ed6407;
+        }
       }
       .like{
         display: block;
         float: left;
+        transition: 0.3s;
+
         background: #b0b0b0;
         width: 178px;
         text-align: center;
         @include setTextHeight(68px,68px,18px,#fff);
+        &:hover{
+          background: #666666;
+      }
         i{
           font-size: 20px;
           margin-right: 5px;
@@ -329,5 +340,37 @@ body {
     }
   }
 }
+.goodTag1{
+  width: 100%;
+  height: 62px;
+  position: fixed;
+  box-shadow: #d7d7d7 2px 4px 4px;
+  background: #ffffff;
+  display: none;
 
+  .wrap-goodTag {
+    width:1226px;
+    height: 62px;
+
+    p {
+      display: block;
+      @include setTextHeight(62px, 62px, 18px, #333333);
+      float: left;
+    }
+    ul {
+      float: right;
+      width: 268px;
+      li {
+        @include setTextHeight(62px, 62px, 14px, #d7d7d7);
+        float: left;
+        a {
+          color: #666666;
+          &:hover {
+            color: #ff6700;
+          }
+        }
+      }
+    }
+  }
+}
 
