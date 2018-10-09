@@ -150,7 +150,7 @@ html{
       margin: 22px auto 0;
       text-align: center;
       line-height: 36px;
-      border: 1px  solid #ff6700;
+      border: 1px solid #ff6700;
       color: #ff6700;
       transition: 0.2s; }
       .bottom .kefu a:hover {
@@ -183,6 +183,176 @@ html{
     font-family: "楷体";
     font-size: 28px;
     color: #d7d7d7; }
+
+.nav {
+  height: 50px;
+  background: #333333; }
+  .nav .nav_left {
+    float: left; }
+  .nav li {
+    margin-right: 8px;
+    float: left;
+    height: 50px;
+    line-height: 48px; }
+    .nav li span {
+      height: 10px;
+      color: #555555; }
+    .nav li a {
+      float: left;
+      font-size: 14px;
+      line-height: 50px;
+      color: #999999; }
+      .nav li a:hover {
+        color: #ffffff; }
+  .nav .nav_right {
+    float: right; }
+  .nav .cart {
+    display: block;
+    line-height: 50px;
+    font-size: 14px;
+    height: 50px;
+    width: 80px;
+    background: #424242 url("../img/index/gouwuche.png") no-repeat 15px center;
+    background-size: 25px 27px;
+    padding-left: 50px;
+    float: right;
+    color: #999999;
+    margin-left: 30px; }
+    .nav .cart:hover {
+      background: #ffffff url("../img/index/gouwuche-ho.png") no-repeat 15px center;
+      background-size: 25px 27px;
+      color: #f15b00; }
+
+.wrap-search {
+  position: relative; }
+  .wrap-search .search-logo {
+    height: 98px;
+    width: 100px;
+    padding-top: 27px;
+    float: left;
+    position: relative; }
+    .wrap-search .search-logo a {
+      width: 69px;
+      height: 67px;
+      display: block;
+      overflow: hidden;
+      text-indent: -1000px; }
+  .wrap-search .tehui {
+    display: block;
+    text-indent: -1000px;
+    overflow: hidden;
+    float: left;
+    width: 194px;
+    padding-top: 20px; }
+  .wrap-search .allGoodList {
+    float: left;
+    overflow: visible; }
+  .wrap-search .allGoodListBtn {
+    text-indent: 0;
+    width: 140px;
+    height: 130px;
+    float: left;
+    color: #333333;
+    font-size: 20px;
+    line-height: 123px;
+    overflow: visible; }
+  .wrap-search .search-nav {
+    float: left; }
+  .wrap-search li {
+    height: 98px;
+    line-height: 98px;
+    float: left; }
+    .wrap-search li a {
+      color: #333333;
+      padding: 13px;
+      font-size: 20px;
+      float: left; }
+      .wrap-search li a:hover {
+        color: #f15b00; }
+  .wrap-search .search-right {
+    float: right;
+    padding-top: 30px; }
+    .wrap-search .search-right input {
+      width: 284px;
+      padding-left: 20px;
+      height: 60px;
+      border: 1px solid #999999;
+      border-right: none;
+      outline: none;
+      font-size: 25px;
+      float: left; }
+    .wrap-search .search-right a {
+      float: left;
+      display: block;
+      height: 60px;
+      width: 60px;
+      color: #333333;
+      border: 1px solid #999999;
+      line-height: 60px;
+      text-align: center;
+      transition: 0.5s; }
+      .wrap-search .search-right a:hover {
+        background: #f15b00;
+        color: #ffffff; }
+      .wrap-search .search-right a i {
+        font-size: 30px; }
+
+.allGoodMenu {
+  padding: 30px 0;
+  width: 283px;
+  position: absolute;
+  height: 516px;
+  z-index: 400;
+  background: #ffffff;
+  border: 1px solid #ff6700;
+  left: 0;
+  display: none;
+  top: 131px; }
+  .allGoodMenu li {
+    height: 53px;
+    width: 283px; }
+    .allGoodMenu li a {
+      display: block;
+      width: 209px;
+      height: 53px;
+      line-height: 53px;
+      color: #333333;
+      padding: 0 37px;
+      font-size: 18px;
+      overflow: hidden; }
+      .allGoodMenu li a:hover {
+        background: #f15b00;
+        color: #ffffff; }
+      .allGoodMenu li a span {
+        float: right; }
+
+.bannerTwoLevelMenu {
+  width: 0px;
+  height: 575px;
+  position: absolute;
+  z-index: 500;
+  top: 0;
+  left: 283px; }
+  .bannerTwoLevelMenu div {
+    width: 1300px; }
+    .bannerTwoLevelMenu div ul {
+      width: 313px;
+      height: 575px;
+      float: left;
+      margin-left: -1px;
+      background: #ffffff; }
+      .bannerTwoLevelMenu div ul li {
+        line-height: 98px;
+        padding-left: 30px;
+        width: 283px !important;
+        height: 98px !important;
+        color: #333333;
+        transition: 0.3s; }
+        .bannerTwoLevelMenu div ul li:hover {
+          color: #ff6700; }
+
+.boxShadow {
+  box-shadow: #d7d7d7 3px 6px 6px; }
 
 .wrap {
   transform: scale(0.8);

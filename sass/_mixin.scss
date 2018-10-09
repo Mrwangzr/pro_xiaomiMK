@@ -1,0 +1,6 @@
+@mixin setTextHeight($height,$lineHeight,$font-size,$color){
+  height: $height;
+  line-height: $lineHeight;
+  font-size: $font-size;
+  color: $color;
+}

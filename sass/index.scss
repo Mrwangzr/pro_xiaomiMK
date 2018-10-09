@@ -7,7 +7,7 @@ body {
   overflow-x: hidden;
 }
 
-.wrap-nav, .wrap-img, .wrap-search, .wrap-banner, .wrap-recommend, .wrap-shangouTag, .allGoodDiv{
+.wrap-nav, .wrap-img, .wrap-search, .wrap-banner, .wrap-recommend, .wrap-shangouTag, .allGoodDiv {
   width: 1533px;
   margin: 0 auto;
 }
@@ -63,101 +63,24 @@ body {
     .nav_right {
       float: right;
     }
-  }
 
-  #cart {
-    display: block;
-    line-height: 50px;
-    font-size: 14px;
-    height: 50px;
-    width: 80px;
-    background: #424242 url("../img/index/gouwuche.png") no-repeat 15px center;
-    background-size: 25px 27px;
-    padding-left: 50px;
-    float: right;
-    color: #999999;
-    margin-left: 30px;
-
-    &:hover {
-      background: #ffffff url("../img/index/gouwuche-ho.png") no-repeat 15px center;
-      background-size: 25px 27px;
-      color: #f15b00;
-    }
-  }
-
-  .wrap-search {
-    position: relative;
-    .search-logo {
-      height: 98px;
-      width: 100px;
-      padding-top: 27px;
-      float: left;
-      position: relative;
-
-      a {
-        width: 69px;
-        height: 67px;
-        display: block;
-        overflow: hidden;
-        text-indent: -1000px;
-      }
-    }
-    .tehui {
+    .cart {
       display: block;
-      text-indent: -1000px;
-      overflow: hidden;
-      float: left;
-      width: 194px;
-      padding-top: 20px;
-    }
-    .search-nav {
-      float: left;
-    }
-    li {
-        height: 98px;
-        line-height: 98px;
-        float: left;
-        a {
-          color: #333333;
-          padding: 13px;
-          font-size: 20px;
-          float: left;
-          &:hover {
-            color: #f15b00;
-          }
-        }
-      }
-    .search-right {
+      line-height: 50px;
+      font-size: 14px;
+      height: 50px;
+      width: 80px;
+      background: #424242 url("../img/index/gouwuche.png") no-repeat 15px center;
+      background-size: 25px 27px;
+      padding-left: 50px;
       float: right;
-      padding-top: 30px;
-      input {
-        width: 284px;
-        padding-left: 20px;
-        height: 60px;
-        border: 1px solid #999999;
-        border-right: none;
-        outline: none;
-        font-size: 25px;
-        float: left;
-      }
-      a {
-        float: left;
-        display: block;
-        height: 60px;
-        width: 60px;
-        color: #333333;
-        border: 1px solid #999999;
-        line-height: 60px;
-        text-align: center;
-        transition: 0.5s;
+      color: #999999;
+      margin-left: 30px;
 
-        &:hover {
-          background: #f15b00;
-          color: #ffffff;
-        }
-        i {
-          font-size: 30px;
-        }
+      &:hover {
+        background: #ffffff url("../img/index/gouwuche-ho.png") no-repeat 15px center;
+        background-size: 25px 27px;
+        color: #f15b00;
       }
     }
   }
@@ -187,9 +110,9 @@ body {
           padding: 0 37px;
           font-size: 18px;
           overflow: hidden;
-       /*   &:hover {
-            background: #f15b00;
-          }*/
+          /*   &:hover {
+               background: #f15b00;
+             }*/
           span {
             float: right;
           }
@@ -202,8 +125,8 @@ body {
       height: 100%;
       position: absolute;
       z-index: 10;
-      ul:first-child{
-        .bannerBtn{
+      ul:first-child {
+        .bannerBtn {
           width: 50px;
           height: 70px;
           opacity: 0.8;
@@ -215,21 +138,21 @@ body {
           color: #d7d7d7;
           text-align: center;
           line-height: 70px;
-          &:hover{
+          &:hover {
             background: #999999;
           }
         }
-        .leftBtn{
+        .leftBtn {
           left: 18%;
         }
-        .rightBtn{
+        .rightBtn {
           right: 0;
         }
       }
     }
     //这里是图片样式
     .banner-right-img {
-      img{
+      img {
         width: 1533px;
         height: 100%;
         position: absolute;
@@ -237,7 +160,7 @@ body {
         transition: 0.3s;
         opacity: 0;
       }
-      img:nth-child(0){
+      img:nth-child(0) {
         opacity: 1;
       }
     }
@@ -263,7 +186,6 @@ body {
         border-color: #797775;
         background: #c9c6c4;
       }
-
 
     }
   }
@@ -356,6 +278,8 @@ body {
         height: 30px;
         border: 1px solid #999999;
         outline: none;
+        transition: 0.3s;
+        font-size: 25px;
       }
     }
     //倒计时的样式
@@ -411,9 +335,12 @@ body {
       position: relative;
 
       .sgGoodlong {
-        width: 3000px;
+        _width: 3100px;
+        min-width: 3100px;
         height: 429px;
         position: absolute;
+        left: 0;
+        transition: 0.3s;
       }
       .sgGood {
         width: 293px;
@@ -421,11 +348,17 @@ body {
         float: left;
         margin-right: 17px;
         background: #fafafa;
+
         .goodImg {
           width: 292px;
-          height: 287px;
-          background: url("../img/index/mobanimg.jpg") no-repeat center center;
+          height: 227px;
+          //  background: url("../img/index/mobanimg.jpg") no-repeat center center;
           background-size: 70% 70%;
+          padding-top: 60px;
+          img {
+            display: block;
+            margin: 0 auto;
+          }
         }
         @include goodPriceInfo;
       }
@@ -462,10 +395,19 @@ body {
           float: right;
           font-size: 20px;
           color: #b0b0b0;
+          transition: 0.2s;
 
           i {
             font-size: 25px;
             color: #b0b0b0;
+            transition: 0.2s;
+
+          }
+          &:hover {
+            color: #ff6700;
+          }
+          &:hover i {
+            color: #ff6700;
           }
         }
         ul {
@@ -530,9 +472,13 @@ body {
 
               .goodOneImg {
                 width: 294px;
-                height: 252px;
-                background: url("../img/index/666666.png") no-repeat center center;
+                height: 192px;
+                padding-top: 60px;
+                //  background: url("../img/index/666666.png") no-repeat center center;
                 background-size: 70% 70%;
+                img {
+                  margin: 0 auto;
+                }
               }
             }
 
@@ -834,21 +780,21 @@ body {
               top: 20%;
             }
           }
-        &:hover span{
-          width: 45px;
-          height: 30px;
-          border: none;
-          background: #f15b00;
-        }
+          &:hover span {
+            width: 45px;
+            height: 30px;
+            border: none;
+            background: #f15b00;
+          }
         }
       }
-      h3{
-        margin:40px auto 17px;
+      h3 {
+        margin: 40px auto 17px;
         text-align: center;
         line-height: 18px;
         color: #333333;
       }
-      p{
+      p {
         text-align: center;
         font-size: 14px;
         line-height: 14px;
@@ -860,8 +806,48 @@ body {
   }
 }
 
-
 #sgBtn-left {
   border-right: none;
+}
+
+#floatDiv {
+  width: 90px;
+  height: 420px;
+  position: fixed;
+  right: 0;
+  bottom: 10%;
+  li {
+    height: 70px;
+    width: 90px;
+    border-bottom: 1px solid #d7d7d7;
+    background: #ffffff;
+    padding-top: 20px;
+
+    &:nth-last-child(2) {
+      border: none;
+      margin-bottom: 20px;
+    }
+    a {
+      font-size: 14px;
+      color: #999999;
+      text-align: center;
+      transition: 0.3s;
+      &:hover {
+        color: #ff6700;
+      }
+      p {
+        text-align: center;
+      }
+      i {
+        display: block;
+        margin: 0 auto 10px;
+        font-size: 30px;
+      }
+    }
+  }
+  .returnTop {
+    display: none;
+    border: none;
+  }
 }
 

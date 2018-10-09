@@ -40,10 +40,10 @@ class BannerTowLevelMenu {
             indexA++;
         }
     }
-        toView(id){
-            this.view.html("");
-            this.view.append(this.divArr[id]);
-        }
+    toView(id){
+        this.view.html("");
+        this.view.append(this.divArr[id]);
+    }
 }
 
 //再附带一个banner的轮播图
@@ -69,16 +69,16 @@ class Slide{
         }
 
         $(this.imgArr[last]).css({
-           opacity:0
+            opacity:0
         });
         $(this.dotList[last]).removeClass("banner-dot1");
 
         $(this.dotList[this.now]).addClass("banner-dot1");
 
-          $(this.imgArr[this.now]).css({
-              opacity:1,
-              "z-index": ++this.zIndex
-          });
+        $(this.imgArr[this.now]).css({
+            opacity:1,
+            "z-index": ++this.zIndex
+        });
     }
     autoplay(){
 
@@ -96,12 +96,12 @@ class Slide{
         $(this.ul.parent()).mouseenter($.proxy(this.ulMouseEnter,this));
         $(this.ul.parent()).mouseleave($.proxy(this.ulMouseLeave,this));
 
-            $.each(this.dotList,$.proxy(this.eachDotList,this));
+        $.each(this.dotList,$.proxy(this.eachDotList,this));
 
-            this.leftBtn.appendTo(this.ul);
-            this.rightBtn.appendTo(this.ul);
-            this.leftBtn.click($.proxy(this.leftBtnClick,this));
-            this.rightBtn.click($.proxy(this.rightBtnClick,this));
+        this.leftBtn.appendTo(this.ul);
+        this.rightBtn.appendTo(this.ul);
+        this.leftBtn.click($.proxy(this.leftBtnClick,this));
+        this.rightBtn.click($.proxy(this.rightBtnClick,this));
 
     }
     leftBtnClick(){
@@ -127,4 +127,68 @@ class Slide{
 
 
 }
+//闪购下的滑动栏目
+class CrossSlip{
+    constructor(targetDiv,leftBtn,rightBtn){
+        this.div = targetDiv;
+        this.leftBtn = leftBtn;
+        this.rightBtn = rightBtn;
+        this.modelList = this.div.find("a");
+        this.width = parseInt(this.modelList.eq(0).find("div").css("width"));
+        this.margin = parseInt(this.modelList.eq(0).find("div").css("margin-right"));
+        this.leftCss = parseInt(this.div.css("left"));
+        this.leftlength = 0;
+        this.rightlength =this.modelList.length-4;
+        this.init();
+    }
 
+    init(){
+        this.leftBtn.attr("disabled","disabled");
+
+        this.leftBtn.click($.proxy(this.leftBtnClick,this));
+        this.rightBtn.click($.proxy(this.rightBtnClick,this));
+    };
+
+    leftBtnClick(){
+        var num = this.leftlength>4 ? 4 : this.leftlength;
+        console.log(num);
+        this.leftlength-=num;
+        this.rightlength+=num;
+        this.leftCss +=num*(this.width+this.margin);
+        this.div.css({
+            left:this.leftCss,
+            width: (parseInt(this.div.css("width"))-Math.abs(num*(this.width+this.margin)))
+        });
+        this.disableBtn();
+
+    }
+
+    rightBtnClick(){
+        var num = this.rightlength>4 ? 4 : this.rightlength;
+        console.log(num);
+        this.rightlength-=num;
+        this.leftlength+=num;
+        this.leftCss -=num*(this.width+this.margin);
+        this.div.css({
+            left:this.leftCss,
+            width: (parseInt(this.div.css("width"))+Math.abs(num*(this.width+this.margin)))
+        });
+        this.disableBtn();
+
+
+    }
+    disableBtn(){
+        if(this.leftlength){
+            this.leftBtn.attr("disabled",false);
+        }
+        else{
+            this.leftBtn.attr("disabled",true);
+        }
+        if(this.rightlength){
+            this.rightBtn.attr("disabled",false);
+        }
+        else{
+            this.rightBtn.attr("disabled",true);
+        }
+    }
+}

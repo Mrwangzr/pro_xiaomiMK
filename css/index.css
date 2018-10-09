@@ -150,7 +150,7 @@ html{
       margin: 22px auto 0;
       text-align: center;
       line-height: 36px;
-      border: 1px  solid #ff6700;
+      border: 1px solid #ff6700;
       color: #ff6700;
       transition: 0.2s; }
       .bottom .kefu a:hover {
@@ -184,6 +184,148 @@ html{
     font-size: 28px;
     color: #d7d7d7; }
 
+.nav {
+  height: 50px;
+  background: #333333; }
+  .nav .nav_left {
+    float: left; }
+  .nav li {
+    margin-right: 8px;
+    float: left;
+    height: 50px;
+    line-height: 48px; }
+    .nav li span {
+      height: 10px;
+      color: #555555; }
+    .nav li a {
+      float: left;
+      font-size: 14px;
+      line-height: 50px;
+      color: #999999; }
+      .nav li a:hover {
+        color: #ffffff; }
+  .nav .nav_right {
+    float: right; }
+  .nav .cart {
+    display: block;
+    line-height: 50px;
+    font-size: 14px;
+    height: 50px;
+    width: 80px;
+    background: #424242 url("../img/index/gouwuche.png") no-repeat 15px center;
+    background-size: 25px 27px;
+    padding-left: 50px;
+    float: right;
+    color: #999999;
+    margin-left: 30px; }
+    .nav .cart:hover {
+      background: #ffffff url("../img/index/gouwuche-ho.png") no-repeat 15px center;
+      background-size: 25px 27px;
+      color: #f15b00; }
+
+.wrap-search {
+  position: relative; }
+  .wrap-search .search-logo {
+    height: 98px;
+    width: 100px;
+    padding-top: 27px;
+    float: left;
+    position: relative; }
+    .wrap-search .search-logo a {
+      width: 69px;
+      height: 67px;
+      display: block;
+      overflow: hidden;
+      text-indent: -1000px; }
+  .wrap-search .tehui {
+    display: block;
+    text-indent: -1000px;
+    overflow: hidden;
+    float: left;
+    width: 194px;
+    padding-top: 20px; }
+  .wrap-search .allGoodList {
+    float: left;
+    overflow: visible; }
+  .wrap-search .allGoodListBtn {
+    text-indent: 0;
+    width: 140px;
+    height: 130px;
+    float: left;
+    color: #333333;
+    font-size: 20px;
+    line-height: 123px;
+    overflow: visible; }
+  .wrap-search .search-nav {
+    float: left; }
+  .wrap-search li {
+    height: 98px;
+    line-height: 98px;
+    float: left; }
+    .wrap-search li a {
+      color: #333333;
+      padding: 13px;
+      font-size: 20px;
+      float: left; }
+      .wrap-search li a:hover {
+        color: #f15b00; }
+  .wrap-search .search-right {
+    float: right;
+    padding-top: 30px; }
+    .wrap-search .search-right input {
+      width: 284px;
+      padding-left: 20px;
+      height: 60px;
+      border: 1px solid #999999;
+      border-right: none;
+      outline: none;
+      font-size: 25px;
+      float: left; }
+    .wrap-search .search-right a {
+      float: left;
+      display: block;
+      height: 60px;
+      width: 60px;
+      color: #333333;
+      border: 1px solid #999999;
+      line-height: 60px;
+      text-align: center;
+      transition: 0.5s; }
+      .wrap-search .search-right a:hover {
+        background: #f15b00;
+        color: #ffffff; }
+      .wrap-search .search-right a i {
+        font-size: 30px; }
+
+.allGoodMenu {
+  padding: 30px 0;
+  width: 283px;
+  position: absolute;
+  height: 516px;
+  z-index: 400;
+  background: #ffffff;
+  border: 1px solid #ff6700;
+  left: 0;
+  display: none;
+  top: 131px; }
+  .allGoodMenu li {
+    height: 53px;
+    width: 283px; }
+    .allGoodMenu li a {
+      display: block;
+      width: 209px;
+      height: 53px;
+      line-height: 53px;
+      color: #333333;
+      padding: 0 37px;
+      font-size: 18px;
+      overflow: hidden; }
+      .allGoodMenu li a:hover {
+        background: #f15b00;
+        color: #ffffff; }
+      .allGoodMenu li a span {
+        float: right; }
+
 .bannerTwoLevelMenu {
   width: 0px;
   height: 575px;
@@ -194,7 +336,7 @@ html{
   .bannerTwoLevelMenu div {
     width: 1300px; }
     .bannerTwoLevelMenu div ul {
-      min-width: 313px;
+      width: 313px;
       height: 575px;
       float: left;
       margin-left: -1px;
@@ -208,6 +350,9 @@ html{
         transition: 0.3s; }
         .bannerTwoLevelMenu div ul li:hover {
           color: #ff6700; }
+
+.boxShadow {
+  box-shadow: #d7d7d7 3px 6px 6px; }
 
 .top-twoLevelMenu {
   width: 2000px;
@@ -295,83 +440,22 @@ body {
           color: #ffffff; }
     .all .nav .nav_right {
       float: right; }
-  .all #cart {
-    display: block;
-    line-height: 50px;
-    font-size: 14px;
-    height: 50px;
-    width: 80px;
-    background: #424242 url("../img/index/gouwuche.png") no-repeat 15px center;
-    background-size: 25px 27px;
-    padding-left: 50px;
-    float: right;
-    color: #999999;
-    margin-left: 30px; }
-    .all #cart:hover {
-      background: #ffffff url("../img/index/gouwuche-ho.png") no-repeat 15px center;
-      background-size: 25px 27px;
-      color: #f15b00; }
-  .all .wrap-search {
-    position: relative; }
-    .all .wrap-search .search-logo {
-      height: 98px;
-      width: 100px;
-      padding-top: 27px;
-      float: left;
-      position: relative; }
-      .all .wrap-search .search-logo a {
-        width: 69px;
-        height: 67px;
-        display: block;
-        overflow: hidden;
-        text-indent: -1000px; }
-    .all .wrap-search .tehui {
+    .all .nav .cart {
       display: block;
-      text-indent: -1000px;
-      overflow: hidden;
-      float: left;
-      width: 194px;
-      padding-top: 20px; }
-    .all .wrap-search .search-nav {
-      float: left; }
-    .all .wrap-search li {
-      height: 98px;
-      line-height: 98px;
-      float: left; }
-      .all .wrap-search li a {
-        color: #333333;
-        padding: 13px;
-        font-size: 20px;
-        float: left; }
-        .all .wrap-search li a:hover {
-          color: #f15b00; }
-    .all .wrap-search .search-right {
+      line-height: 50px;
+      font-size: 14px;
+      height: 50px;
+      width: 80px;
+      background: #424242 url("../img/index/gouwuche.png") no-repeat 15px center;
+      background-size: 25px 27px;
+      padding-left: 50px;
       float: right;
-      padding-top: 30px; }
-      .all .wrap-search .search-right input {
-        width: 284px;
-        padding-left: 20px;
-        height: 60px;
-        border: 1px solid #999999;
-        border-right: none;
-        outline: none;
-        font-size: 25px;
-        float: left; }
-      .all .wrap-search .search-right a {
-        float: left;
-        display: block;
-        height: 60px;
-        width: 60px;
-        color: #333333;
-        border: 1px solid #999999;
-        line-height: 60px;
-        text-align: center;
-        transition: 0.5s; }
-        .all .wrap-search .search-right a:hover {
-          background: #f15b00;
-          color: #ffffff; }
-        .all .wrap-search .search-right a i {
-          font-size: 30px; }
+      color: #999999;
+      margin-left: 30px; }
+      .all .nav .cart:hover {
+        background: #ffffff url("../img/index/gouwuche-ho.png") no-repeat 15px center;
+        background-size: 25px 27px;
+        color: #f15b00; }
   .all .wrap-banner {
     height: 576px;
     position: relative; }
@@ -516,7 +600,9 @@ body {
         width: 43px;
         height: 30px;
         border: 1px solid #999999;
-        outline: none; }
+        outline: none;
+        transition: 0.3s;
+        font-size: 25px; }
     .all .wrap-shangouTag .daojishi {
       width: 293px;
       height: 426px;
@@ -560,9 +646,12 @@ body {
       overflow: hidden;
       position: relative; }
       .all .wrap-shangouTag .sgGoodDiv .sgGoodlong {
-        width: 3000px;
+        _width: 3100px;
+        min-width: 3100px;
         height: 429px;
-        position: absolute; }
+        position: absolute;
+        left: 0;
+        transition: 0.3s; }
       .all .wrap-shangouTag .sgGoodDiv .sgGood {
         width: 293px;
         height: 426px;
@@ -571,9 +660,12 @@ body {
         background: #fafafa; }
         .all .wrap-shangouTag .sgGoodDiv .sgGood .goodImg {
           width: 292px;
-          height: 287px;
-          background: url("../img/index/mobanimg.jpg") no-repeat center center;
-          background-size: 70% 70%; }
+          height: 227px;
+          background-size: 70% 70%;
+          padding-top: 60px; }
+          .all .wrap-shangouTag .sgGoodDiv .sgGood .goodImg img {
+            display: block;
+            margin: 0 auto; }
         .all .wrap-shangouTag .sgGoodDiv .sgGood h3 {
           text-align: center;
           font-size: 20px;
@@ -618,10 +710,16 @@ body {
         .all .allGood .allGoodDiv .goodDivTop a {
           float: right;
           font-size: 20px;
-          color: #b0b0b0; }
+          color: #b0b0b0;
+          transition: 0.2s; }
           .all .allGood .allGoodDiv .goodDivTop a i {
             font-size: 25px;
-            color: #b0b0b0; }
+            color: #b0b0b0;
+            transition: 0.2s; }
+          .all .allGood .allGoodDiv .goodDivTop a:hover {
+            color: #ff6700; }
+          .all .allGood .allGoodDiv .goodDivTop a:hover i {
+            color: #ff6700; }
         .all .allGood .allGoodDiv .goodDivTop ul {
           float: right;
           height: 29px; }
@@ -668,9 +766,11 @@ body {
             background: #ffffff; }
             .all .allGood .allGoodDiv .goodDivMiddle .goodMiddleRight li .goodDiv-one .goodOneImg {
               width: 294px;
-              height: 252px;
-              background: url("../img/index/666666.png") no-repeat center center;
+              height: 192px;
+              padding-top: 60px;
               background-size: 70% 70%; }
+              .all .allGood .allGoodDiv .goodDivMiddle .goodMiddleRight li .goodDiv-one .goodOneImg img {
+                margin: 0 auto; }
         .all .allGood .allGoodDiv .goodDivMiddle .goodMiddleRight .goodDiv-last {
           width: 294px;
           height: 376px;
@@ -959,5 +1059,37 @@ body {
 
 #sgBtn-left {
   border-right: none; }
+
+#floatDiv {
+  width: 90px;
+  height: 420px;
+  position: fixed;
+  right: 0;
+  bottom: 10%; }
+  #floatDiv li {
+    height: 70px;
+    width: 90px;
+    border-bottom: 1px solid #d7d7d7;
+    background: #ffffff;
+    padding-top: 20px; }
+    #floatDiv li:nth-last-child(2) {
+      border: none;
+      margin-bottom: 20px; }
+    #floatDiv li a {
+      font-size: 14px;
+      color: #999999;
+      text-align: center;
+      transition: 0.3s; }
+      #floatDiv li a:hover {
+        color: #ff6700; }
+      #floatDiv li a p {
+        text-align: center; }
+      #floatDiv li a i {
+        display: block;
+        margin: 0 auto 10px;
+        font-size: 30px; }
+  #floatDiv .returnTop {
+    display: none;
+    border: none; }
 
 /*# sourceMappingURL=index.css.map */

@@ -28,14 +28,14 @@ require(["jquery", "cookie"], function ($, cookie) {
             var str = $("#username").val();
             var cookieStr = $.cookie("user") ? $.cookie("user"):"";
             if(!cookieStr){
-                $(".tishi").css("display","block");
+                $(".tishi").css("display","block").html("用户名或密码错误");
             }
             else{
                 var userArr = cookieStr.split(",");
                 if(userArr.indexOf(str) !== -1){
                     //登录成功
                     $("#username").css("border-color","#999999");
-                    $(".tishi").css("display","none").html("用户名或密码错误");
+                    $(".tishi").css("display","none");
                     $.cookie("loginUser",str,{expires:7,path:"/"});
                     location.href = "index.html";
                 }
