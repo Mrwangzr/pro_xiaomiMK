@@ -1,0 +1,265 @@
+@import "common";
+@import "mixin";
+
+body{
+  overflow-x: hidden;
+}
+.all {
+  width: 2000px;
+  transform: translateX(-50%) scale(0.8);
+  margin-left: 750px;
+}
+
+.wrap-top,.wrap-cart,.colTable {
+  width: 1226px;
+  margin: 0 auto;
+}
+
+.top {
+  height: 100px;
+  border-bottom: 3px solid #ff6700;
+  .wrap-top {
+    height:76px;
+    padding: 20px 0;
+    img{
+      display: block;
+      float: left;
+      width: 48px;
+      height: 48px;
+    }
+    h2{
+      float: left;
+      margin-left: 28px;
+      @include setTextHeight(48px,48px,28px,#666);
+    }
+    ul{
+      _width: 72px;
+      min-width: 72px;
+      float: right;
+      li{
+        @include setTextHeight(48px,48px,10px,#d7d7d7);
+        float: left;
+        a{
+          color: #999999;
+          float: left;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+
+.cart{
+  _height: 560px;
+  min-height: 560px;
+  background: #f5f5f5;
+  padding-top: 40px;
+  padding-bottom: 50px;
+  .wrap-cart{
+    _height: 600px;
+    min-height: 600px;
+    position: relative;
+    .emptyCart{
+      width: 728px;
+      height: 277px;
+      position: absolute;
+      top: 160px;
+      left: 160px;
+      img{
+        display: block;
+        float: left;
+        width: 296px;
+        height: 277px;
+      }
+      h2{
+        @include setTextHeight(277px,277px,40px,#b0b0b0);
+        margin-left: 72px;
+        float: left;
+      }
+    }
+
+    .colTable{
+      _height:  236px;
+      min-height: 236px;
+      div{
+        text-align: center;
+        float: left;
+      }
+      .checkBox{
+        position: absolute;
+        z-index: -1;
+        visibility: hidden;
+        &:checked{
+          visibility: hidden;
+        }
+      }
+      .checkBoxBtn{
+        display: inline-block;
+        margin: 0 auto;
+        width: 18px;
+        height:18px;
+        background: #fff;
+        border: 1px solid #999999;
+      }
+
+      .col-check-head{
+        width: 124px;
+      }
+      .col-img-head{
+        width: 100px;
+      }
+      .col-name-head{
+        width:387px;
+      }
+      .col-price-head{
+        width: 156px;
+      }
+      .col-num-head{
+        width: 151px;
+      }
+      .col-sum-head{
+        width:177px;
+      }
+      .col-edit-head{
+        width:131px;
+      }
+
+      .col-head{
+        background: #ffffff;
+        border-bottom: 1px solid #d7d7d7;
+        div{
+          height: 70px;
+          line-height: 70px;
+          color: #666666;
+        }
+      }
+
+      .col-check{
+        width: 124px;
+      }
+      .col-img{
+        width: 100px;
+        text-align: center;
+        img{
+          padding:20px 0 0 20px;
+          display: inline;
+          width: 52px;
+          height: 65px;
+        }
+      }
+      .col-name{
+        width:387px;
+       a{
+         font-size:16px;
+         color: #333333;
+       }
+      }
+      .col-price{
+        width: 156px;
+        color: #666666;
+
+      }
+      .col-num{
+        width: 151px;
+        padding-top: 35px;
+        .numCountMachine{
+          line-height: 33px;
+          width: 145px;
+          height: 33px;
+          padding: 1px;
+          border: 1px solid #d7d7d7;
+          .add,.minus{
+            display: block;
+            float: left;
+            width: 38px;
+            height: 34px;
+            color: #999999;
+            transition: 0.3s;
+            &:hover{
+              background: #d7d7d7;
+            }
+          }
+          .result{
+            width: 69px;
+            height: 37px;
+            float: left;
+            color: #666;
+          }
+        }
+      }
+      .col-sum{
+        width:177px;
+        color: #ff6700;
+      }
+      .col-edit{
+        width:131px;
+        a{
+          color: #999999;
+        }
+      }
+
+
+      .col-body{
+        background: #ffffff;
+        height: 114px;
+        div{
+          height:114px;
+          line-height: 114px;
+
+        }
+      }
+
+      .col-foot{
+        margin-top:20px; ;
+        height: 51px;
+        background: #ffffff;
+        p{
+          display: block;
+          float: left;
+          width: 109px;
+          height: 51px;
+          line-height: 51px;
+          font-size: 14px;
+          a{
+          color: #999999;
+          }
+        }
+        li{
+          display: block;
+          float: left;
+          height: 51px;
+          width: 882px;
+          line-height: 51px;
+          padding:0 16px;
+          text-align: left;
+          color: #999999;
+          span{
+            color: #ff6700;
+          }
+          b{
+            color: #ff6700;
+          }
+          strong{
+            color: #ff6700;
+            float: right;;
+            em{
+              font-size: 24px;
+            }
+          }
+
+        }
+        .buy{
+          width: 202px;
+          height: 51px;
+          background: #ff6700;
+          display: block;
+          line-height: 51px;
+          text-align: center;
+          float: left;
+          font-size: 16px;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}

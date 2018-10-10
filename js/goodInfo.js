@@ -5,29 +5,41 @@ require.config({
         cookie: "jquery.cookie",
         cookieConverts: "cookieConverts",
         toptwolevelmenu: "toptwolevelmenu",
-        indexModel: "indexModel"
+        indexModel: "indexModel",
     }
 });
 require(["jquery", "cookie", "cookieConverts", "toptwolevelmenu", "indexModel"], function ($, cookie, cookieConverts, toptwolevelmenu, indexModel) {
 
-    function GetRequest() {
-        var url = location.search; //获取url中"?"符后的字串
-        if (url.indexOf("?") !== -1) {  //判断是否有参数
-            var str = url.substr(1); //从第一个字符开始 因为第0个是?号 获取所有除问号的所有符串
-            var strs = str.split("=");  //用等号进行分隔 （因为知道只有一个参数 所以直接用等号进分隔 如果有多个参数 要用&号分隔 再用等号进行分隔）
-           return strs[1];    //直接弹出第一个参数 （如果有多个参数 还要进行循环的）
-        }
-    }
 
 
     $(function () {
 
+        var userInfo = $(".nav_right");
+        var loginUser = $.cookie("loginUser");
+        var id = GetRequest();
+        if(loginUser){
+            var str = ` <li><a href="##">${loginUser}</a></li>
+                <li><span>|</span></li>
+                <li><a href="##">注销</a></li>
+                <li><span>|</span></li>
+                <li><a href="##">消息通知</a></li>`;
+            userInfo.html(str);
+        }
+        function GetRequest() {
+            var url = location.search; //获取url中"?"符后的字串
+            if (url.indexOf("?") !== -1) {  //判断是否有参数
+                var str = url.substr(1); //从第一个字符开始 因为第0个是?号 获取所有除问号的所有符串
+                var strs = str.split("=");  //用等号进行分隔 （因为知道只有一个参数 所以直接用等号进分隔 如果有多个参数 要用&号分隔 再用等号进行分隔）
+                return strs[1];    //直接弹出第一个参数 （如果有多个参数 还要进行循环的）
+            }
+        }
         //获得全部轮播图的图片
         var imgListStr = [];
         //初始化全部信息
         $.get("../json/phoneInfo.json", function (data) {
-            var phoneData = data[ GetRequest()];
+            var phoneData = data[id];
             $(".goodTag").find("p").html(phoneData["name"]);
+            document.title = phoneData["name"];
             //基本信息
             var goodContentInfo = $(".goodContent-info");
             goodContentInfo.find("h2").html(phoneData["name"])
@@ -274,6 +286,42 @@ require(["jquery", "cookie", "cookieConverts", "toptwolevelmenu", "indexModel"],
 
 
             init();
+
+            //加入购物车
+            /*
+            * {
+            *   "商品1": {
+            *       img: ---,
+            *       name: ---,
+            *       onePrice:---,
+            *       num: --.
+            *   }
+            * }
+            *
+            * */
+            //
+            $(".toCart").click(function () {
+                var storage = window.localStorage;
+                var cartObj = {};
+                var num = 0;
+                if(storage.cart){
+                    cartObj = JSON.parse(storage.cart);
+                    if(cartObj[id]){
+                        console.log(cartObj[id]["num"]);
+                        num = parseInt(cartObj[id]["num"]);
+                    }
+                }
+                var oneGood = {
+                    "img" : $(slide.imgArr[0]).attr("src"),
+                    "name" : $(".goodContent-info").find("h2").text()+versionP.find("span").text()+versionP.find("em").text(),
+                    "onePrice" : versionP.find("b").text(),
+                    "num" : num+1
+                }
+                cartObj[id] = oneGood;
+                storage.cart = JSON.stringify(cartObj);
+                alert("加入购物车成功");
+                location.href  = "cart.html";
+            });
         }
     });
 });
