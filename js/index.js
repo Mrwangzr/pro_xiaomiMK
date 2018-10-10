@@ -73,7 +73,6 @@ require(["jquery", "cookie", "cookieConverts", "toptwolevelmenu","indexModel"], 
         var sgLeftBtn = $(".sgBtn-left");
         var sgRightBtn = $(".sgBtn-right");
         var crossSlip = new CrossSlip(sgGoodlong,sgLeftBtn,sgRightBtn);
-        console.log(crossSlip);
         //返回顶部
 
         $(document).scroll(function (ev) {
@@ -87,5 +86,17 @@ require(["jquery", "cookie", "cookieConverts", "toptwolevelmenu","indexModel"], 
         $(".returnTop").click(function () {
            $(document).scrollTop(0);
         });
+        //用户登录后的处理
+       var userInfo = $(".nav_right");
+       var loginUser = $.cookie("loginUser");
+       if(loginUser){
+           var str = ` <li><a href="##">${loginUser}</a></li>
+                <li><span>|</span></li>
+                <li><a href="##">注销</a></li>
+                <li><span>|</span></li>
+                <li><a href="##">消息通知</a></li>`;
+           userInfo.html(str);
+       }
+
     });
 });

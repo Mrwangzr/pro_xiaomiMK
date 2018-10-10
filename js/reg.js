@@ -100,54 +100,59 @@ require(["jquery", "search", "cookie"], function ($, search, cookie) {
             var str = $(this).val();
             //如果填写的手机号不符合条件
             if (str == "") {
-                $(".formDiv2").css("border-color","#ef5b00");
-                $(".sjtishi").css("display","block").html("请输入手机号码");
+                $(".formDiv2").css("border-color", "#ef5b00");
+                $(".sjtishi").css("display", "block").html("请输入手机号码");
             }
             else if (!regExp.test(str)) {
                 flagPhone = 0;
-                $(".formDiv2").css("border-color","#ef5b00");
-                $(".sjtishi").css("display","block").html("手机号码格式错误");
+                $(".formDiv2").css("border-color", "#ef5b00");
+                $(".sjtishi").css("display", "block").html("手机号码格式错误");
             } else {
                 flagPhone = 1;
-                $(".formDiv2").css("border-color","#ded9d9");
-                $(".sjtishi").css("display","none");
+                $(".formDiv2").css("border-color", "#ded9d9");
+                $(".sjtishi").css("display", "none");
             }
 
         });
 
         //提交按钮的设置
         $("#regSub").click(function () {
-            if(flagPhone){
-                if($("#xieyi").prop("checked")){
-                    $(".xytishi").css("display","none");
-                    var str = $("#phone").val();
-                    var cookieObj = { "phone" :  str};
-                    //获取用户列表
-                    var cookieStr = $.cookie("user")?$.cookie("user"):"";
-                    if(!cookieStr){
-                        cookieStr += str;
-                    }
-                    else{
-                        var userArr = cookieStr.split(",");
-                        //防止重复注册
-                        if(userArr.indexOf(str) !== -1){
-                            $(".sjtishi").css("display","block").html("手机号已被注册");
-                            return false;
+            if ($("#phone").val() == "") {
+                $(".formDiv2").css("border-color", "#ef5b00");
+                $(".sjtishi").css("display", "block").html("请输入手机号码");
+            } else {
+                if (flagPhone) {
+                    if ($("#xieyi").prop("checked")) {
+                        $(".xytishi").css("display", "none");
+                        var str = $("#phone").val();
+                        var cookieObj = {"phone": str};
+                        //获取用户列表
+                        var cookieStr = $.cookie("user") ? $.cookie("user") : "";
+                        if (!cookieStr) {
+                            cookieStr += str;
                         }
-                        else{
-                        cookieStr += "," + str;
+                        else {
+                            var userArr = cookieStr.split(",");
+                            //防止重复注册
+                            if (userArr.indexOf(str) !== -1) {
+                                $(".sjtishi").css("display", "block").html("手机号已被注册");
+                                return false;
+                            }
+                            else {
+                                cookieStr += "," + str;
+                            }
+                        }
+                        $.cookie("user", cookieStr, {expires: 7, path: "/"});
+                        alert("注册成功");
+                        location.href = "login.html";
                     }
+                    else {
+                        $(".xytishi").css("display", "block").html("请您同意用户条款");
                     }
-                    $.cookie("user",cookieStr,{expires : 7 , path: "/"});
-                    alert("注册成功");
-                    location.href = "login.html";
-                }
-                else{
-                    $(".xytishi").css("display","block").html("请您同意用户条款");
-                }
-            }else{
-                if(!$("#xieyi").prop("checked")){
-                    $(".xytishi").css("display","block").html("请您同意用户条款");
+                } else {
+                    if (!$("#xieyi").prop("checked")) {
+                        $(".xytishi").css("display", "block").html("请您同意用户条款");
+                    }
                 }
             }
         });

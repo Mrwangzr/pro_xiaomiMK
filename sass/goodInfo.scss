@@ -67,8 +67,76 @@ body {
   .goodContent-left {
     width: 699px;
     height: 1700px;
-    background: #000;
     float: left;
+    position: relative;
+    .goodSlideDiv{
+      width: 699px;
+      height: 705px;
+      padding-top:75px;
+      position: absolute;
+      top: 10px;
+      //图片
+      .goodSlideUl{
+        img{
+          display: block;
+          position: absolute;
+          z-index: 10;
+          left: 50%;
+          transform: translateX(-50%);
+          transition: 0.5s;
+          opacity: 0;
+        }
+      }
+      //点阵
+      .dotList{
+        height: 63px;
+        width: 288px;
+        left: 50%;
+        transform:translateX(-50%);
+        position: absolute;
+        bottom: 0;
+        z-index: 1000;
+        text-align: center;
+        a{
+          display: inline-block;
+          width: 62px;
+          height: 2px;
+          border: {
+            top: 1px solid #d7d7d7;
+            bottom: 1px solid #d7d7d7;
+          }
+          background: #cccccc;
+          margin-right: 13px;
+        }
+        .banner-dot1{
+          background: #a3a3a3;
+        }
+      }
+      //按钮
+      .bannerBtn {
+        width: 50px;
+        height: 70px;
+        opacity: 0.8;
+        position: absolute;
+        z-index: 2000;
+        top: 40%;
+        display: block;
+        font-size: 30px;
+        color: #d7d7d7;
+        text-align: center;
+        line-height: 70px;
+        &:hover {
+          background: #999999;
+        }
+      }
+      .leftBtn {
+        left: 0%;
+      }
+      .rightBtn {
+        right: 0;
+      }
+      //图片
+    }
   }
   .goodContent-right {
     height: 1700px;
@@ -157,11 +225,18 @@ body {
 
         a {
           width: 307px;
+          position: relative;
           @include setTextHeight(52px, 52px, 20px, #666666);
           padding: 0 34px;
           display: block;
           border: 1px solid #d7d7d7;
+          b{
+            position: relative;
+            z-index: -1;
+          }
           span {
+            position: relative;
+            z-index: -1;
             float: right;
             color: #d7d7d7;
             font-size: 20px;
@@ -174,7 +249,8 @@ body {
 
     .goodContent-color {
       width: 760px;
-      height: 100px;
+      _height:100px;
+      min-height: 100px;
       margin-bottom: 35px;
       h2 {
         @include setTextHeight(22px, 22px, 22px, #333333);
@@ -198,6 +274,11 @@ body {
 
     .goodContent-service {
       margin-bottom: 37px;
+      .goodContent-serviceMask{
+        position: relative;
+        z-index: -1;
+        top: -2px;
+      }
       h2 {
         @include setTextHeight(22px, 22px, 22px, #333333);
         margin-bottom: 20px;
@@ -215,7 +296,7 @@ body {
         li {
           width: 656px;
           height: 127px;
-          border-bottom: 1px solid #d7d7d7;
+          border: 1px solid #d7d7d7;
           padding: 50px 25px 40px 52px;
           strong {
             display: block;
@@ -279,6 +360,9 @@ body {
       min-height:88px;
       background: #f9f9fa;
       padding: 26px 38px 40px ;
+      .serviceP{
+        display: none;
+      }
       p{
         @include setTextHeight(40px,40px,18px,#666666);
         b{

@@ -1,0 +1,102 @@
+{
+  "xiaomi8qingchunban": {
+    "name": "小米8 青春版",
+    "desc": {
+      "state": "[新品现货在售]",
+      "other": "潮流镜面渐变色 / 2400万自拍旗舰 / 7.5mm超薄机身 / 6.26\"小刘海全面屏 / AI裸妆美颜 / 骁龙660AIE处理器"
+    },
+    "mainPrice": "1399元",
+    "version": {
+      "0": {
+        "versionStr": "4GB+64GB 全网通",
+        "price": "1399元"
+      },
+      "1": {
+        "versionStr": "6GB+64GB 全网通",
+        "price": "1699元"
+      },
+      "2": {
+        "versionStr": "6GB+128GB 全网通",
+        "price": "1999元"
+      }
+    },
+    "color": {
+      "0": {
+        "name": "深空灰",
+        "img": "['../img/goodInfo/bigImg1.jpg','../img/goodInfo/bigImg2.jpg','../img/goodInfo/bigImg3.jpg','../img/goodInfo/bigImg4.jpg']"
+      }
+   }
+  },
+  "xiaomi8pingmuzhiwenban": {
+    "name": "小米8 屏幕指纹版",
+    "desc": {
+      "state": "[新品现货在售]",
+      "other": "全球首款 压感屏幕指纹 / 双频GPS超精准定位 / 支持红外人脸识别 / 骁龙845 AIE 旗舰处理器"
+    },
+    "mainPrice": "3599元",
+    "version": {
+      "0": {
+        "versionStr": "8GB+128GB",
+        "price": "3599元"
+      },
+      "1": {
+        "versionStr": "6GB+128GB",
+        "price": "3199元"
+      }
+    },
+    "color": {
+      "0": {
+        "name": "暮光金",
+        "img": "['../img/goodInfo/goodImg5.png','../img/goodInfo/goodImg6.png','../img/goodInfo/goodImg7.png']"
+      },
+      "1": {
+        "name": "透明",
+        "img": "['../img/goodInfo/bigImg8.jpg','../img/goodInfo/bigImg9.jpg','../img/goodInfo/bigImg10.jpg','bigImg11.jpg']"
+      }
+    }
+  },
+  "xiaomi8": {
+    "name": "小米8",
+    "desc": {
+      "state": "「全版本直降200元」",
+      "other": "全球首款双频GPS / 骁龙845处理器 / 红外人脸解锁 / AI变焦双摄 / 三星 AMOLED 屏"
+    },
+    "mainPrice": "2499元",
+    "version": {
+      "0": {
+        "versionStr": "6GB+64GB 全网通",
+        "price": "2499元"
+      },
+      "1": {
+        "versionStr": "6GB+128GB 全网通",
+        "price": "2799元"
+      },
+      "2": {
+        "versionStr": "8GB+128GB 全网通",
+        "price": "3099元"
+      },
+      "3": {
+        "versionStr": "6GB+256GB 全网通",
+        "price": "3099元"
+      }
+    },
+    "color": {
+      "0": {
+        "name": "黑色",
+        "img": "['../img/goodInfo/bigImg1-1.jpg','../img/goodInfo/bigImg1-2.jpg','../img/goodInfo/bigImg1-3.jpg','../img/goodInfo/bigImg1-4.jpg']"
+      },
+      "1": {
+        "name": "蓝色",
+        "img": "['../img/goodInfo/bigImg2-1.jpg','../img/goodInfo/bigImg2-2.jpg','../img/goodInfo/bigImg2-3.jpg','../img/goodInfo/bigImg2-4.jpg']"
+      },
+      "2": {
+        "name": "金色",
+        "img":"['../img/goodInfo/bigImg3-1.jpg','../img/goodInfo/bigImg3-2.jpg','../img/goodInfo/bigImg3-3.jpg','../img/goodInfo/bigImg3-4.jpg']"
+      },
+      "3": {
+        "name": "白色",
+        "img": "['../img/goodInfo/bigImg4-1.jpg','../img/goodInfo/bigImg4-2.jpg','../img/goodInfo/bigImg143.jpg','../img/goodInfo/bigImg4-4.jpg']"
+      }
+    }
+  }
+}

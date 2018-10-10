@@ -452,8 +452,59 @@ body {
   .wrap-goodContent .goodContent-left {
     width: 699px;
     height: 1700px;
-    background: #000;
-    float: left; }
+    float: left;
+    position: relative; }
+    .wrap-goodContent .goodContent-left .goodSlideDiv {
+      width: 699px;
+      height: 705px;
+      padding-top: 75px;
+      position: absolute;
+      top: 10px; }
+      .wrap-goodContent .goodContent-left .goodSlideDiv .goodSlideUl img {
+        display: block;
+        position: absolute;
+        z-index: 10;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: 0.5s;
+        opacity: 0; }
+      .wrap-goodContent .goodContent-left .goodSlideDiv .dotList {
+        height: 63px;
+        width: 288px;
+        left: 50%;
+        transform: translateX(-50%);
+        position: absolute;
+        bottom: 0;
+        z-index: 1000;
+        text-align: center; }
+        .wrap-goodContent .goodContent-left .goodSlideDiv .dotList a {
+          display: inline-block;
+          width: 62px;
+          height: 2px;
+          border-top: 1px solid #d7d7d7;
+          border-bottom: 1px solid #d7d7d7;
+          background: #cccccc;
+          margin-right: 13px; }
+        .wrap-goodContent .goodContent-left .goodSlideDiv .dotList .banner-dot1 {
+          background: #a3a3a3; }
+      .wrap-goodContent .goodContent-left .goodSlideDiv .bannerBtn {
+        width: 50px;
+        height: 70px;
+        opacity: 0.8;
+        position: absolute;
+        z-index: 2000;
+        top: 40%;
+        display: block;
+        font-size: 30px;
+        color: #d7d7d7;
+        text-align: center;
+        line-height: 70px; }
+        .wrap-goodContent .goodContent-left .goodSlideDiv .bannerBtn:hover {
+          background: #999999; }
+      .wrap-goodContent .goodContent-left .goodSlideDiv .leftBtn {
+        left: 0%; }
+      .wrap-goodContent .goodContent-left .goodSlideDiv .rightBtn {
+        right: 0; }
   .wrap-goodContent .goodContent-right {
     height: 1700px;
     width: 760px;
@@ -539,6 +590,7 @@ body {
         margin: 0 20px 17px 0; }
         .wrap-goodContent .goodContent-right .goodContent-version li a {
           width: 307px;
+          position: relative;
           height: 52px;
           line-height: 52px;
           font-size: 20px;
@@ -546,13 +598,19 @@ body {
           padding: 0 34px;
           display: block;
           border: 1px solid #d7d7d7; }
+          .wrap-goodContent .goodContent-right .goodContent-version li a b {
+            position: relative;
+            z-index: -1; }
           .wrap-goodContent .goodContent-right .goodContent-version li a span {
+            position: relative;
+            z-index: -1;
             float: right;
             color: #d7d7d7;
             font-size: 20px; }
     .wrap-goodContent .goodContent-right .goodContent-color {
       width: 760px;
-      height: 100px;
+      _height: 100px;
+      min-height: 100px;
       margin-bottom: 35px; }
       .wrap-goodContent .goodContent-right .goodContent-color h2 {
         height: 22px;
@@ -577,6 +635,10 @@ body {
           text-align: center; }
     .wrap-goodContent .goodContent-right .goodContent-service {
       margin-bottom: 37px; }
+      .wrap-goodContent .goodContent-right .goodContent-service .goodContent-serviceMask {
+        position: relative;
+        z-index: -1;
+        top: -2px; }
       .wrap-goodContent .goodContent-right .goodContent-service h2 {
         height: 22px;
         line-height: 22px;
@@ -595,7 +657,7 @@ body {
         .wrap-goodContent .goodContent-right .goodContent-service ul li {
           width: 656px;
           height: 127px;
-          border-bottom: 1px solid #d7d7d7;
+          border: 1px solid #d7d7d7;
           padding: 50px 25px 40px 52px; }
           .wrap-goodContent .goodContent-right .goodContent-service ul li strong {
             display: block;
@@ -649,6 +711,8 @@ body {
       min-height: 88px;
       background: #f9f9fa;
       padding: 26px 38px 40px; }
+      .wrap-goodContent .goodContent-right .goodContent-money .serviceP {
+        display: none; }
       .wrap-goodContent .goodContent-right .goodContent-money p {
         height: 40px;
         line-height: 40px;
