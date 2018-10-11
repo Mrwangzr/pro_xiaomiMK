@@ -5,11 +5,12 @@ require.config({
         cookie: "jquery.cookie",
         cookieConverts: "cookieConverts",
         toptwolevelmenu: "toptwolevelmenu",
-        indexModel:"indexModel"
+        indexModel:"indexModel",
+        cartNav:"cartNav"
     }
 });
 
-require(["jquery", "cookie", "cookieConverts", "toptwolevelmenu","indexModel"], function ($, cookie, cookieConverts, toptwolevelmenu,indexModel) {
+require(["jquery", "cookie", "cookieConverts", "toptwolevelmenu","indexModel","cartNav"], function ($, cookie, cookieConverts, toptwolevelmenu,indexModel,cartNav) {
 
 //顶部的二级菜单
     $(function () {
@@ -97,6 +98,9 @@ require(["jquery", "cookie", "cookieConverts", "toptwolevelmenu","indexModel"], 
                 <li><a href="##">消息通知</a></li>`;
            userInfo.html(str);
        }
+        //购物车
+        setCartMenu();
+
 
     });
 });

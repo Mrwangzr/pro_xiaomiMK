@@ -33,57 +33,6 @@ body {
     }
   }
 
-  .nav {
-    height: 50px;
-    background: #333333;
-    .nav_left {
-      float: left;
-    }
-    li {
-      margin-right: 8px;
-      float: left;
-      height: 50px;
-      line-height: 48px;
-
-      span {
-        height: 10px;
-        color: #555555;
-      }
-      a {
-        float: left;
-        font-size: 14px;
-        line-height: 50px;
-        color: #999999;
-        &:hover {
-          color: #ffffff;
-        }
-      }
-    }
-
-    .nav_right {
-      float: right;
-    }
-
-    .cart {
-      display: block;
-      line-height: 50px;
-      font-size: 14px;
-      height: 50px;
-      width: 80px;
-      background: #424242 url("../img/index/gouwuche.png") no-repeat 15px center;
-      background-size: 25px 27px;
-      padding-left: 50px;
-      float: right;
-      color: #999999;
-      margin-left: 30px;
-
-      &:hover {
-        background: #ffffff url("../img/index/gouwuche-ho.png") no-repeat 15px center;
-        background-size: 25px 27px;
-        color: #f15b00;
-      }
-    }
-  }
   //banner图部分
   .wrap-banner {
     height: 576px;
@@ -444,16 +393,7 @@ body {
             margin-bottom: 18px;
           }
         }
-        //div的动画效果
-        .goAnimation {
-          position: relative;
-          transition: 0.5s;
-          top: 0;
-          &:hover {
-            box-shadow: 0 2px 4px 4px #d6d6d6;
-            top: -10px;
-          }
-        }
+
         .goodMiddleRight {
           width: 1240px;
           height: 770px;

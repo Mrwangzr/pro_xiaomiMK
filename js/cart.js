@@ -4,10 +4,11 @@ require.config({
         jquery: "jquery-1.11.0",
         cookie: "jquery.cookie",
         cookieConverts: "cookieConverts",
+        cartNav:"cartNav"
     }
 });
 
-require(["jquery", "cookie", "cookieConverts"], function ($, cookie, cookieConverts) {
+require(["jquery", "cookie", "cookieConverts","cartNav"], function ($, cookie, cookieConverts,cartNav) {
 
     $(function () {
         //处理用户
@@ -21,7 +22,26 @@ require(["jquery", "cookie", "cookieConverts"], function ($, cookie, cookieConve
         }
 
         //处理购物车里的东西
-        var cart = JSON.parse(window.localStorage.cart);
+        function setView() {
+            var cartStr = window.localStorage.cart;
+            if(!cartStr||cartStr=="{}"){
+                $(".emptyCart").css("display","block");
+                $(".colTable").css("display","none");
+            }else{
+                $(".colTable").css("display","block");
+                $(".emptyCart").css("display","none");
+            }
+        }
+        var cartStr = window.localStorage.cart;
+        console.log(cartStr);
+        if(!cartStr||cartStr=="{}"){
+               $(".emptyCart").css("display","block");
+            $(".colTable").css("display","none");
+        }else{
+            $(".colTable").css("display","block");
+            $(".emptyCart").css("display","none");
+
+            var cart = JSON.parse(cartStr);
         var goods = $(".col-goods");
         //商品总数
         var goodCount = 0;
@@ -164,6 +184,9 @@ require(["jquery", "cookie", "cookieConverts"], function ($, cookie, cookieConve
             window.localStorage.cart = JSON.stringify(target);
 
             $(this).parent("div").parent("div").remove();
+
+            setView();
         });
+        }
     });
 });

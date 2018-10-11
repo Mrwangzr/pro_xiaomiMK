@@ -46,7 +46,7 @@ img {
 .clear_fix {
   zoom: 1;
 }
-
+@import "mixin";
 /*
 @media all and (max-width:320px){
     html{font-size:12px;}
@@ -263,7 +263,93 @@ html{
   .nav_right {
     float: right;
   }
+  .cartMenu{
+    float: right;
+    position: relative;
+    .cartTwoLevelMenu{
+      position: absolute;
+      width: 400px;
+      _height:0px;
+      min-height: 0px;
+      background: #ffffff;
+      left: -240px;
+      top: 50px;
+      z-index: 2000;
+      display: none;
 
+      .empty{
+        width: 400px;
+        height: 120px;
+        line-height: 120px;
+        text-align: center;
+        color: #999999;
+        display: none;
+      }
+      .goodsList {
+        width: 400px;
+        _height: 120px;
+        min-height: 120px;
+        .goods {
+          width: 362px;
+          height: 72px;
+          padding: 38px 0 0 38px;
+          img{
+            width: 51px;
+            height: 62px;
+            float: left;
+            display: block;
+            margin-right: 25px;
+          }
+          p{
+            display: block;
+            float: left;
+            width: 115px;
+            height: 55px;
+            line-height: 26px;
+            font-size: 16px;
+            color: #666666;
+            margin-right: 45px;
+            overflow: hidden;
+          }
+          b{
+            display: block;
+            color: #666666;
+            font-size: 16px;
+            float: left;
+          }
+        }
+
+      }
+      .foot{
+        width: 350px;
+        height:74px;
+        padding: 25px 25px 0;
+        background: #fafafa;
+        .foot-left{
+          float: left;
+          p{
+            @include setTextHeight(14px,14px,14px,#999);
+            margin-bottom: 6px;
+          }
+          h4{
+            font-size: 14px;
+            color: #ff6700;
+            b{
+              font-size: 24px;
+            }
+          }
+        }
+        .foot-right{
+          width: 165px;
+          @include setTextHeight(50px,50px,18px,#fff);
+          text-align: center;
+          display: block;
+          background: #ff6700;
+          float: right;
+        }
+      }
+    }
+  }
   .cart {
     display: block;
     line-height: 50px;
@@ -277,17 +363,12 @@ html{
     color: #999999;
     margin-left: 30px;
 
-    &:hover {
-      background: #ffffff url("../img/index/gouwuche-ho.png") no-repeat 15px center;
-      background-size: 25px 27px;
-      color: #f15b00;
-    }
+
   }
 }
 
 //顶部第二个导航栏
 .wrap-search {
-  position: relative;
   .search-logo {
     height: 98px;
     width: 100px;
@@ -425,12 +506,14 @@ html{
   left: 283px;
   div{
     width: 1300px;
+    margin-left: 2px;
     ul{
       width: 313px;
       height: 575px;
       float: left;
       margin-left: -1px;
       background: #ffffff;
+      box-shadow: #d7d7d7 9px 5px 16px;
       li{
         line-height: 98px;
         padding-left:30px ;
@@ -438,6 +521,13 @@ html{
         height: 98px!important;
         color: #333333;
         transition: 0.3s;
+        img{
+          display: inline;
+          width: 29px;
+          height: 30px;
+          padding-top: 40px;
+          margin-right: 5px;
+        }
         &:hover{
           color: #ff6700;
         }
@@ -447,5 +537,16 @@ html{
 }
 
 .boxShadow{
-  box-shadow: #d7d7d7 3px 6px 6px;
+  box-shadow: #d7d7d7 3px 6px 16px;
+}
+
+//div的动画效果
+.goAnimation {
+  position: relative;
+  transition: 0.5s;
+  top: 0;
+  &:hover {
+    box-shadow: #d7d7d7 3px 6px 16px;
+    top: -10px;
+  }
 }

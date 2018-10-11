@@ -40,6 +40,25 @@ class Toptwolevelmenu {
         this.view.append(this.divArr[id]);
     }
 }
+function initToptwolevelmenu() {
+    var searchNav = $(".search-nav");
+    var topMenu = null;
+    $.get("../json/topMenu.json", function (data) {
+        topMenu = new Toptwolevelmenu(searchNav, data);
+    });
+
+
+    searchNav.on("mouseenter", "li", function () {
+        $(".top-twoLevelMenu").slideDown(100);
+        var id = parseInt($(this).attr("data-id"));
+        topMenu.toView(id);
+    });
+
+    searchNav.on("mouseleave", function () {
+        $(".top-twoLevelMenu").slideUp(100);
+    });
+
+}
 
 
 

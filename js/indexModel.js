@@ -23,14 +23,22 @@ class BannerTowLevelMenu {
             var $div = $("<div></div>");
             var $ulArr = [$("<ul></ul>"), $("<ul></ul>"), $("<ul></ul>"), $("<ul></ul>")];
             var indexB = -1;
+            var img = ["../img/common/smallimg1.png","../img/common/smallimg2.jpg","../img/common/smallimg3.jpg","../img/common/smallimg4.png","../img/common/smallimg5.png",
+                "../img/common/smallimg6.png","../img/common/smallimg7.png","../img/common/smallimg8.png"];
+            var imgNum = 0
             for (var i = 0, len = dataArr.length; i < len; i++) {
                 if (!i) {
                     indexB++;
                     $ulArr[indexB].appendTo($div);
                 }
                 var li =   $("<li></li>");
-                li.html(dataArr[i]).appendTo($ulArr[indexB]);
-                $("<i></i>").addClass("iconfont").addClass("icon-shoujidaoshouji").css("font-size","30px").appendTo(li);
+                $("<img/>").attr("src",img[++imgNum]).appendTo(li);
+                if(!(imgNum%8)){
+                    imgNum = 0;
+                }
+                li.append(dataArr[i]).appendTo($ulArr[indexB]);
+             /*   $("<i></i>").addClass("iconfont").addClass("icon-shoujidaoshouji").css("font-size","30px").appendTo(li);*/
+
                 if((i + 1) % 6===0&&(i+1)!==len){
                     indexB++;
                     $ulArr[indexB].appendTo($div);
@@ -44,6 +52,39 @@ class BannerTowLevelMenu {
         this.view.html("");
         this.view.append(this.divArr[id]);
     }
+}
+function initBannerTowLevelMenu() {
+    var allGoodListBtn = $(".allGoodListBtn");
+    var allGoodList = $(".allGoodList");
+    var allGoodMenu = $(".allGoodMenu");
+    allGoodList.on("mouseenter", "a", function () {
+        allGoodMenu.slideDown(0);
+    });
+
+    allGoodList.on("mouseleave", function () {
+        allGoodMenu.slideUp(0);
+    });
+    //banner的二级菜单
+    var allGoodMenuUl = $(".allGoodMenuUl");
+    var allGoodMenuCont = null;
+    $.get("../json/bannerMenu.json", function (data) {
+        allGoodMenuCont = new BannerTowLevelMenu(allGoodMenuUl, data);
+    });
+    //---
+    //---
+    allGoodMenuUl.on("mouseenter", "a", function () {
+        $(".allGoodMenuUl>li>a").css("background", "#3333333");
+        $(this).css("background", "#f15b00")
+        $(".bannerTwoLevelMenu").show(0);
+        var id = parseInt($(this).attr("data-id"));
+        allGoodMenuCont.toView(id);
+    });
+
+    allGoodMenuUl.on("mouseleave", function () {
+        $(".bannerMenuUl>li>a").css("background", "#3333333");
+        $(".bannerTwoLevelMenu").hide(0);
+    });
+    //----
 }
 
 //再附带一个banner的轮播图

@@ -6,9 +6,10 @@ require.config({
         cookieConverts: "cookieConverts",
         toptwolevelmenu: "toptwolevelmenu",
         indexModel: "indexModel",
+        cartNav:"cartNav"
     }
 });
-require(["jquery", "cookie", "cookieConverts", "toptwolevelmenu", "indexModel"], function ($, cookie, cookieConverts, toptwolevelmenu, indexModel) {
+require(["jquery", "cookie", "cookieConverts", "toptwolevelmenu", "indexModel","cartNav"], function ($, cookie, cookieConverts, toptwolevelmenu, indexModel,cartNav) {
 
 
 
@@ -72,7 +73,7 @@ require(["jquery", "cookie", "cookieConverts", "toptwolevelmenu", "indexModel"],
         function initPage() {
 
             //顶部二级菜单
-            var searchNav = $(".search-nav");
+         /*   var searchNav = $(".search-nav");
             var topMenu = null;
             $.get("../json/topMenu.json", function (data) {
                 topMenu = new Toptwolevelmenu(searchNav, data);
@@ -87,40 +88,10 @@ require(["jquery", "cookie", "cookieConverts", "toptwolevelmenu", "indexModel"],
 
             searchNav.on("mouseleave", function () {
                 $(".top-twoLevelMenu").slideUp(100);
-            });
+            });*/
+         initToptwolevelmenu();
             //全部商品二级菜单
-            var allGoodListBtn = $(".allGoodListBtn");
-            var allGoodList = $(".allGoodList");
-            var allGoodMenu = $(".allGoodMenu");
-            allGoodList.on("mouseenter", "a", function () {
-                allGoodMenu.slideDown(0);
-            });
-
-            allGoodList.on("mouseleave", function () {
-                allGoodMenu.slideUp(0);
-            });
-//全部商品的二级菜单
-            //banner的二级菜单
-            var allGoodMenuUl = $(".allGoodMenuUl");
-            var allGoodMenuCont = null;
-            $.get("../json/bannerMenu.json", function (data) {
-                allGoodMenuCont = new BannerTowLevelMenu(allGoodMenuUl, data);
-            });
-            //---
-            //---
-            allGoodMenuUl.on("mouseenter", "a", function () {
-                $(".allGoodMenuUl>li>a").css("background", "#3333333");
-                $(this).css("background", "#f15b00")
-                $(".bannerTwoLevelMenu").show(0);
-                var id = parseInt($(this).attr("data-id"));
-                allGoodMenuCont.toView(id);
-            });
-
-            allGoodMenuUl.on("mouseleave", function () {
-                $(".bannerMenuUl>li>a").css("background", "#3333333");
-                $(".bannerTwoLevelMenu").hide(0);
-            });
-            //----
+            initBannerTowLevelMenu();
 //        顶部固定定位+轮播图定位
             var goodTag = $(".goodTag1");
             var goodSlideDiv = $(".goodSlideDiv");
@@ -322,6 +293,8 @@ require(["jquery", "cookie", "cookieConverts", "toptwolevelmenu", "indexModel"],
                 alert("加入购物车成功");
                 location.href  = "cart.html";
             });
+            //购物车
+            setCartMenu();
         }
     });
 });

@@ -1,0 +1,83 @@
+{
+  "xiaomishouji":{
+    "xiaomi8":{
+      "name":"小米8",
+      "desc":"全球首款双频GPS，骁龙845",
+      "price":"2499元起",
+      "old":"2699元",
+      "img":"../img/phonePage/xiaomi8.jpg"
+    },
+    "xiaomi6X":{
+      "name":"小米6X",
+      "desc":"轻薄美观的拍照手机",
+      "price":"1299元起",
+      "old":"1499元",
+      "img":"../img/phonePage/xiaomi6X.jpg"
+    },
+    "xiaomi8SE":{
+      "name":"小米8 SE",
+      "desc":"三星 AMOLED 全面屏 小屏旗舰",
+      "price":"1699元起",
+      "old":"1799元",
+      "img":"../img/phonePage/xiaomi8SE.jpg"
+    },
+    "xiaomiMIX2":{
+      "name":"小米MIX 2",
+      "desc":"大内存，128GB容量",
+      "price":"2699元起",
+      "old":"4699元",
+      "img":"../img/phonePage/xiaomiMIX2.jpg"
+    },
+    "xiaomiMax2":{
+      "name":"小米Max 2",
+      "desc":"6.44\"大屏，5300mAh大电量",
+      "price":"1699元起",
+      "old":"",
+      "img":"../img/phonePage/xiaomiMax2.jpg"
+    }
+  },
+  "hongmishouji":{
+    "hongmi6":{
+      "name":"红米6",
+      "desc":"小屏高性能的双摄手机",
+      "price":"769元起",
+      "old":"799元",
+      "img":"../img/phonePage/hongmi6.jpg"
+    },
+    "hongmi6A":{
+      "name":"红米6A 2GB+16GB ",
+      "desc":"好用好看不贵",
+      "price":"569元起",
+      "old":"599元",
+      "img":"../img/phonePage/hongmi6A.jpg"
+    },
+    "hongmiNote5":{
+      "name":"红米Note 5 ",
+      "desc":"红米国民品质，拍照专家",
+      "price":"969元起",
+      "old":"1099元",
+      "img":"../img/phonePage/hongmiNote5.jpg"
+    },
+    "hongmi5Plus":{
+      "name":"红米5 Plus ",
+      "desc":"全面屏，4000mAh大电量",
+      "price":"999元起",
+      "old":"",
+      "img":"../img/phonePage/hongmi5Plus.jpg"
+    },
+    "hongmi5":{
+      "name":"红米5",
+      "desc":"12MP旗舰相机，骁龙处理器",
+      "price":"799元起",
+      "old":"",
+      "img":"../img/phonePage/hongmi5.jpg"
+    },
+    "hongmi5zipai":{
+      "name":"红米自拍手机S2",
+      "desc":"1600万像素自拍手机",
+      "price":"999元起",
+      "old":"",
+      "img":"../img/phonePage/hongmi5zipai.jpg"
+    }
+  }
+}

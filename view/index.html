@@ -40,7 +40,24 @@
                 <li><a href="#">Select Region</a></li>
             </ul>
 
-            <a href="cart.html" class="cart">购物车(0)</a>
+            <div class="cartMenu clear_fix">
+                <a href="cart.html" class="cart">购物车(<span></span>)</a>
+                <div class="cartTwoLevelMenu boxShadow clear_fix">
+                    <div class="empty">
+                        购物车中还没有商品,赶紧选购吧!
+                    </div>
+                    <div class="goodsList">
+                    </div>
+                    <div class="foot">
+                        <div class="foot-left">
+                            <p>共<span></span>件商品</p>
+                            <h4><b></b>元</h4>
+                        </div>
+                        <a href="cart.html" class="foot-right">去购物车结算</a>
+                    </div>
+                </div>
+            </div>
+
             <ul class="nav_right clear_fix">
                 <li><a href="login.html">登录</a></li>
                 <li><span>|</span></li>
@@ -78,7 +95,8 @@
     <div class="wrap-banner">
         <div class="banner-left">
             <ul class="bannerMenuUl clear_fix">
-                <li><a href="javascript:;" data-id="0">手机 电话卡 <span><i class="iconfont icon-jiantou"></i></span></a></li>
+                <li><a href="javascript:;" data-id="0">手机 电话卡 <span><i class="iconfont icon-jiantou"></i></span></a>
+                </li>
                 <li><a href="javascript:;" data-id="1">电视 盒子<span><i class="iconfont icon-jiantou"></i></span></a></li>
                 <li><a href="javascript:;" data-id="2">笔记本 平板<span><i class="iconfont icon-jiantou"></i></span></a></li>
                 <li><a href="javascript:;" data-id="3">家电 插线板<span><i class="iconfont icon-jiantou"></i></span></a></li>
@@ -94,7 +112,7 @@
 
         <div class="banner-right">
             <ul class="banner-right-img">
-                <a href="goodInfo.html?name=xiaomi8qingchunban"><img src="../img/index/banner01.jpg"  alt=""></a>
+                <a href="goodInfo.html?name=xiaomi8qingchunban"><img src="../img/index/banner01.jpg" alt=""></a>
                 <a href="goodInfo.html?name=xiaomi8pingmuzhiwenban"><img src="../img/index/banner02.jpg" alt=""></a>
                 <a href="goodInfo.html?name=xiaomi8"> <img src="../img/index/banner03.jpg" alt=""></a>
                 <img src="../img/index/banner04.jpg" alt="">
@@ -107,7 +125,6 @@
                 <li><a href="javascript:;" class="banner-dot" data-id="3"></a></li>
                 <li><a href="javascript:;" class="banner-dot" data-id="4"></a></li>
             </ul>
-            <!--这里还应还应该定位两个按钮-->
         </div>
     </div>
 
@@ -1232,7 +1249,7 @@
         <i class="iconfont icon-cart"></i>
         <p>购物车</p>
     </a></li>
-    <li  class="returnTop">
+    <li class="returnTop">
         <a href="##">
             <i class="iconfont icon-yuanquan"></i>
             <p>返回顶部</p>
