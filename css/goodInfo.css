@@ -890,4 +890,12 @@ body {
           .goodTag1 .wrap-goodTag ul li a:hover {
             color: #ff6700; }
 
+.top-twoLevelMenu {
+  left: 50px;
+  top: 180px; }
+
+.allGoodMenu {
+  left: 232px;
+  top: 180px; }
+
 /*# sourceMappingURL=goodInfo.css.map */

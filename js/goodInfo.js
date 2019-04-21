@@ -55,6 +55,7 @@ require(["jquery", "cookie", "cookieConverts", "toptwolevelmenu", "indexModel","
                 //创建模板字符
                 var str = `<a href="##"><b>${phoneData["version"][i]["versionStr"]}</b> <span>${phoneData["version"][i]["price"]}</span></a>`;
                 //创建li
+
                 $("<li></li>").html(str).appendTo(goodContentVersion);
             }
             //颜色
